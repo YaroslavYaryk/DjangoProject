@@ -6534,3 +6534,1864 @@ AttributeError: 'NoneType' object has no attribute 'send'
 2021-09-20 07:15:36.387 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-20 07:18:45.047 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-20 07:19:30.240 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:06:26.746 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:07:41.010 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:09:12.544 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:10:23.990 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:17:28.433 | ERROR    | core.middleware:process_exception:28 - attach_alternative() missing 1 required positional argument: 'mimetype'
+2021-09-20 18:17:40.783 | ERROR    | core.middleware:process_exception:28 - not enough values to unpack (expected 2, got 1)
+2021-09-20 18:20:21.660 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:20:33.552 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'tests.py'
+2021-09-20 18:21:00.028 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'test.py'
+2021-09-20 18:44:21.244 | ERROR    | core.middleware:process_exception:28 - 'ModelFormMetaclass' object is not subscriptable
+2021-09-20 18:44:42,429  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 406, in get
+    print(RegisterUserForm['email'].value())
+TypeError: 'ModelFormMetaclass' object is not subscriptable
+2021-09-20 18:45:49,690  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 406, in get
+    data = RegisterUserForm.cleaned_data
+AttributeError: type object 'RegisterUserForm' has no attribute 'cleaned_data'
+2021-09-20 18:52:27,955  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 407, in form_valid
+    return super(RegisterUserForm, self).form_valid(form)
+TypeError: super(type, obj): obj must be an instance or subtype of type
+2021-09-20 18:53:41,422  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 407, in form_valid
+    return super(RegisterUserForm).form_valid(form)
+AttributeError: 'super' object has no attribute 'form_valid'
+2021-09-20 18:54:17,411  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 67, in __call__
+    panel.generate_stats(request, response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py", line 53, in generate_stats
+    self.response_headers = OrderedDict(sorted(response.items()))
+AttributeError: 'super' object has no attribute 'items'
+2021-09-20 18:58:56,341  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 407, in form_valid
+    return super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 19, in create_user
+    Woman.objects.create(cat=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: 03Yaryk31>": "Woman.cat" must be a "Category" instance.
+2021-09-20 19:02:52,312  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 407, in form_valid
+    return super(RegisterUser, self).form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 19, in create_user
+    Woman.objects.create(cat=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: 03Yaryk3103>": "Woman.cat" must be a "Category" instance.
+2021-09-20 19:11:50,447  django.security.csrf WARNING  <--> Forbidden (CSRF token missing or incorrect.): /register/
+2021-09-20 19:14:42,186  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 406, in get
+    email = RegisterUser.cleaned_data.get('email')
+AttributeError: type object 'RegisterUser' has no attribute 'cleaned_data'
+2021-09-20 19:17:57,382  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 410, in form_valid
+    return super(RegisterUser, self).form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 19, in create_user
+    Woman.objects.create(cat=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: Adminssssssss>": "Woman.cat" must be a "Category" instance.
+2021-09-20 19:19:12,622  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view icon.views.RegisterUser didn't return an HttpResponse object. It returned None instead.
+2021-09-20 19:33:44,899  django.security.csrf WARNING  <--> Forbidden (CSRF token missing or incorrect.): /register/
+2021-09-20 19:34:36,752  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 19, in create_user
+    Woman.objects.create(cat=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: YAroslav>": "Woman.cat" must be a "Category" instance.
+2021-09-20 19:37:44,201  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 19, in create_user
+    Woman.objects.create(user=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/Python/Django/menu/icon/models.py", line 106, in save
+    super(Woman, self).save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 750, in save_base
+    pre_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 14, in post_save_woman_post
+    raise ValueError("Can't save that short title")
+ValueError: Can't save that short title
+2021-09-20 19:46:10,772  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 18, in create_user
+    Woman.objects.create(user=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/Python/Django/menu/icon/models.py", line 106, in save
+    super(Woman, self).save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 750, in save_base
+    pre_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 13, in post_save_woman_post
+    raise ValueError("Can't save that short title")
+ValueError: Can't save that short title
+2021-09-20 19:47:24,520  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 19:48:00,452  django.request ERROR    <--> Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: icon_woman.cat_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/messages/views.py", line 11, in form_valid
+    response = super().form_valid(form)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 131, in save
+    user.save()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/yaroslav/Python/Django/menu/icon/signals.py", line 11, in create_user
+    Woman.objects.create(user=instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/Python/Django/menu/icon/models.py", line 106, in save
+    super(Woman, self).save(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: icon_woman.cat_id
+2021-09-20 19:48:56,111  django.request ERROR    <--> Internal Server Error: /send_mail_register/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view icon.views.send_mail_register didn't return an HttpResponse object. It returned None instead.
+2021-09-20 19:59:25,429  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:09,252  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:21,299  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:22,074  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:23,259  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 33, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1846, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 119, in get_deleted_objects
+    collector.collect(objs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 182, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 295, in collect
+    if sub_objs:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 284, in __bool__
+    self._fetch_all()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:26,452  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:29,526  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:38,829  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:39,421  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 33, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1846, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 119, in get_deleted_objects
+    collector.collect(objs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 182, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 295, in collect
+    if sub_objs:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 284, in __bool__
+    self._fetch_all()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:40,212  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 33, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1846, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 119, in get_deleted_objects
+    collector.collect(objs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 182, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 295, in collect
+    if sub_objs:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 284, in __bool__
+    self._fetch_all()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:40,454  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:43,101  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:43,204  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:45,981  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:47,224  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:47,437  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 410, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 762, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:00:47,567  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:00:47,731  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 44, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 844, in log_deletion
+    return LogEntry.objects.log_action(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/models.py", line 29, in log_action
+    return self.model.objects.create(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 140, in _record
+    return method(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2021-09-20 20:01:05,774  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:03:37,844  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:07:46,623  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:09:20,428  django.request ERROR    <--> Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1739, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 45, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1109, in delete_queryset
+    queryset.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    deleted, _rows_count = collector.delete()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/deletion.py", line 435, in delete
+    signals.post_delete.send(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/transaction.py", line 246, in __exit__
+    connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 266, in commit
+    self._commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2021-09-20 20:44:53,546  django.request ERROR    <--> Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 72, in get
+    self.search_query = request.GT.get("search", "")
+AttributeError: 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 20:45:08.276 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 20:45:18.742 | ERROR    | core.middleware:process_exception:28 - mail_admins() got an unexpected keyword argument 'body'
+2021-09-20 20:46:20.707 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 20:52:03.634 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'

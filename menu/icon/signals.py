@@ -6,17 +6,8 @@ from icon.models import *
 from datetime import datetime
 
 
-@receiver(pre_save, sender=Woman)
-def post_save_woman_post(sender, instance, **kwargs):
-    if len(instance.title) > 10: #if title in admin page is shorter than 10
-        pass
-    else:
-        raise ValueError("Can't save that short title")    
-
-
 def create_user(sender, instance, created, **kwargs):
     if created:
-        Woman.objects.create(cat=instance)
         print("User Created")
 
 post_save.connect(create_user, sender = User)

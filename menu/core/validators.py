@@ -27,8 +27,8 @@ class ConsistUppercaseValidator:
 
     def validate(self, password, user=None):
 
-        for elem in password:
-            if elem not  in ascii_uppercase:
+        if not any(list(filter(lambda x: x in ascii_uppercase, password))):
+
                 raise ValidationError(_(f"""
                 password is supposed to be contained with at least one uppercase letter"""))
 

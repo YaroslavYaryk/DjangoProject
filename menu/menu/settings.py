@@ -295,3 +295,9 @@ THUМВNAIL_ALIASES = {
     },       
 }
 
+
+ADMIN = [
+    ('Yaryk', 'duhanov2003@gmail.com'),
+    ('Admin2', 'admin2@othersite.com'),
+    ('MegaAdmin', 'megaadmin@megasite.com')
+]

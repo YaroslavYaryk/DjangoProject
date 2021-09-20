@@ -27,3 +27,17 @@
 2021-09-20 07:15:36.387 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-20 07:18:45.047 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-20 07:19:30.240 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:06:26.746 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:07:41.010 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:09:12.544 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:10:23.990 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 18:17:28.433 | ERROR    | core.middleware:process_exception:28 - attach_alternative() missing 1 required positional argument: 'mimetype'
+2021-09-20 18:17:40.783 | ERROR    | core.middleware:process_exception:28 - not enough values to unpack (expected 2, got 1)
+2021-09-20 18:20:21.660 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 18:20:33.552 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'tests.py'
+2021-09-20 18:21:00.028 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'test.py'
+2021-09-20 18:44:21.244 | ERROR    | core.middleware:process_exception:28 - 'ModelFormMetaclass' object is not subscriptable
+2021-09-20 20:45:08.276 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 20:45:18.742 | ERROR    | core.middleware:process_exception:28 - mail_admins() got an unexpected keyword argument 'body'
+2021-09-20 20:46:20.707 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 20:52:03.634 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'

@@ -25,7 +25,8 @@ from django.template import RequestContext
 from core.views import base_views
 from loguru import logger as log
 from .utils import menu
-from django.core.mail import send_mail, BadHeaderError, EmailMessage
+from django.core.mail import send_mail, BadHeaderError, EmailMessage, EmailMultiAlternatives
+from django.core.mail import mail_admins
 
 
 comment_is_liked = []
@@ -75,7 +76,7 @@ class Home_page(DataMixin, CapMixin, ListView):
 
         with open("icon/order_folders/search.txt", "w") as f:
             if self.search_query:
-                f.write(self.search_query)        
+                f.write(self.search_query)
 
         with open("icon/order_folders/order.txt", "w") as f:
             if order:
@@ -199,10 +200,10 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
                 new_comment.save()  # save changes database
                 like.save()
                 messages.add_message(request, messages.SUCCESS,
-                                    'Comment successfully left')
+                                     'Comment successfully left')
             else:
                 messages.add_message(request, messages.WARNING,
-                                    'Wait until time is up')                            
+                                     'Wait until time is up')
         else:
             messages.add_message(request, messages.WARNING,
                                  'you"re not signed in ')
@@ -225,6 +226,7 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
 
 
 order2 = ""
+
 
 class WomanCategory(DataMixin, ListView):
 
@@ -270,9 +272,11 @@ class WomanCategory(DataMixin, ListView):
         return a
 
     def render_to_response(self, context, **response_kwargs):
-        response = super(WomanCategory, self).render_to_response(context, **response_kwargs)
-        response.set_cookie(str(self.kwargs["category_name"]).replace(" ", "_"), 'beloved_category')
-        return response    
+        response = super(WomanCategory, self).render_to_response(
+            context, **response_kwargs)
+        response.set_cookie(str(self.kwargs["category_name"]).replace(
+            " ", "_"), 'beloved_category')
+        return response
 
     def get_queryset(self):
 
@@ -388,7 +392,7 @@ class RegisterUser(DataMixin, SuccessMessageMixin, CreateView):
 
     form_class = RegisterUserForm
     template_name = 'icon/register.html'
-    success_url = reverse_lazy("sign_in")
+    success_url = reverse_lazy("send_mail_register")
     success_message = "User added successfully"
     error_message = "Registration error"
 
@@ -397,6 +401,16 @@ class RegisterUser(DataMixin, SuccessMessageMixin, CreateView):
         c_def = self.get_user_context(
             title="Registration", ico="menu/img/ico/home_pink.png")
         return dict(list(context.items()) + list(c_def.items()))
+
+def send_mail_register(request):
+
+    user = User.objects.order_by("-id").first() #get last registered
+    message = "Thanks for taking our site, i'm really dekightful that you're here, keep on developing, you've got this"
+    user.email_user('Welcome', message , fail_silently=True)
+
+
+    return HttpResponseRedirect(reverse("sign_in"))
+
 
 
 class LoginUser(DataMixin, SuccessMessageMixin, LoginView):
@@ -442,7 +456,7 @@ class ProfileView(DataMixin, ListView):
 @base_views
 def likeView(request, pk):
     """ function for adding like to our post """
-    
+
     response = HttpResponseRedirect(reverse("post", args=[str(pk)]))
 
     post_id = request.GET.get("likeId", "")
@@ -463,7 +477,8 @@ def likeView(request, pk):
                              'to put like you need to sign in first ')
         return response
 
-    response.set_cookie(post.title[:20].replace(" ", "_"), "like.com") if liked else response.set_cookie(post.title[:20].replace(" ", "_"), "dislike.com")
+    response.set_cookie(post.title[:20].replace(" ", "_"), "like.com") if liked else response.set_cookie(
+        post.title[:20].replace(" ", "_"), "dislike.com")
     return response
 
 
@@ -556,12 +571,12 @@ def send_feedback(request):
             }
 
             mess = EmailMessage(
-                    subject = subject,
-                    body= f"FROM {body['username']} \nMESSAGE:\n{body['message']}\n{body['email']}",
-                    to=["duhanov2003@gmail.com"],
-                )
+                subject=subject,
+                body=f"FROM {body['username']} \nMESSAGE:\n{body['message']}\n{body['email']}",
+                to=["duhanov2003@gmail.com"],
+            )
             try:
-
+                mess.attach_file("test.txt")
                 mess.send()
             except BadHeaderError:
                 return HttpResponse('Найден некорректный заголовок')
@@ -569,18 +584,16 @@ def send_feedback(request):
 
     form = FeedbackForm()
 
-    return render(request, template_name="icon/send_feedback.html",context={'form': form, "menu":menu})
+    return render(request, template_name="icon/send_feedback.html", context={'form': form, "menu": menu})
 
 
 def setcookie(request):
 
-    response = HttpResponseRedirect("/")
-    response.set_cookie('Java', "java.com")
-    return response
-
-
-
-
+    em = EmailMultiAlternatives(subject='Test', body='Test',
+                                to=['duhanov2003@gmail.com'])
+    em.attach_alternative('<hl>Nice practice to use all of this types</hl>', 'text/html')
+    em.send()
+    return HttpResponseRedirect(reverse("home"))
 
 
 # class SortPosts(DataMixin, CreateView):

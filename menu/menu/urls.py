@@ -48,6 +48,7 @@ urlpatterns = [
           name='password_change_done'),
     path("send_feedback/", send_feedback, name="send_feedback"), 
     path("cookie/", setcookie, name = "set_cookie"),   
+    path("send_mail_register/", send_mail_register, name="send_mail_register"),
 
     path('', include('social_django.urls', namespace='social')),
     path('__debug__/', include(debug_toolbar.urls)),
