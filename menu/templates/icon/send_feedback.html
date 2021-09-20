@@ -1,0 +1,92 @@
+{% extends "icon/base.html" %}
+{% load static %}
+
+{% block link %}
+	   	<link rel="icon" type="" href="{% static 'menu/img/ico/home_yellow.png' %}">
+	   	<title>Feedback</title>
+           <link rel="stylesheet" href="{% static 'menu/css/send_feedback.css' %}">
+	{% endblock %}
+
+
+
+{% block content %}
+    <h1 id='title'>Feedback Form</h1>
+
+    <form method="post" id='survey-form'>
+        {% csrf_token %}
+        <div class="form-group-reg">
+            <label for="{{form.username.id_for_label}}">Usernamee</label>
+            {{form.username}}
+            <div class="form-error">
+                {{form.username.errors}}
+            </div>
+        </div>
+        <div class="form-group-reg">
+            <label for="{{form.email_address.id_for_label}}">Email</label>
+            {{form.email_address}}
+            <div class="form-error">
+                {{form.email_address.errors}}
+            </div>
+        </div>
+        <div class="form-group-reg">
+            <label for="{{form.message.id_for_label}}">Message</label>
+            {{form.message}}
+            <div class="form-error">
+                {{form.message.errors}}
+            </div>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+
+{% endblock %}
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+

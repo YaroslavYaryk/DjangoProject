@@ -1,0 +1,111 @@
+{% extends "icon/base.html" %}
+{% load static %}
+{% load menu_tags %}
+
+
+<!-- {% get_news_sort as post %} -->
+{% block carusel %}
+	{% load cache %}
+	{% cache  60 carusel %} <!-- load carusel to cache 60 seconds -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 1280px; height: 700px;">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="{{first.photo.url}}" class="d-block w-100" alt="..."  height="700px">
+	      <div class="carousel-caption d-none d-md-block">
+		        <a href="{{first.get_absolute_url}}" class="link_carus">{{first.title}}</a>
+		  </div>
+	    </div>
+	    {% get_news_sort as post %}
+	    {% for elem in post %}
+	    	{% if  forloop.counter < 5  %}
+	      		<div class="carousel-item ">
+			      <img src="{{elem.photo.url}}" class="d-block w-100" alt="..."  height="700px">
+			    	<div class="carousel-caption d-none d-md-block">
+				        <a href="{{elem.get_absolute_url}}" class="link_carus">{{elem.title}}</a>
+			      </div>
+			    </div>
+			{% endif %}    
+	    {% endfor %}
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	{% endcache %}
+{% endblock %}
+
+{% block order %}
+
+	<div class="d-flex justify-content-md-end">
+	 	<form action=''>
+	 		<select name="order" id="order" >
+
+			  	{% if order %}
+					<option class="dropdown-item active-item" value="{{order}}">{{order}}</option>
+
+				{% endif %}	
+			  
+				{% for elem in order_list %}
+					{% if not elem == order %}
+						<option value="{{elem}}">{{elem}}</option>
+
+					{% endif %}	
+				{% endfor %}
+			</select>
+			<input type="submit" value="Order">
+	 	</form>
+	</div>
+{% endblock %}
+
+
+{% block content %}
+
+	<div class="container">
+			<div class="row">
+				{% for elem in post %}
+
+					<div class="card mb-3" style="max-width: 1800px;">
+					  <div class="row g-0">
+					    <div class="col-md-4">
+					    	<div class="card-header">
+					    		Category:
+					    		<a href="{{elem.cat.get_absolute_url}}" class="link_cat"> {{elem.cat|capfirst}}</a>
+                            </div>
+                            {% if elem.photo %}
+					      		<img src="{{elem.photo.url}}" width="400px" class="img-fluid rounded-start img_face" alt="...">
+					      	{% else %}
+					      		<img src="{% static 'menu/img/light_man_copy_26.png' %}" width="600px" class="img-fluid rounded-start" alt="...">
+					      	{% endif %}
+					    </div>
+
+					    <div class="col-md-8">
+
+					      <div class="card-body">
+					        <h5 class="card-title">{{elem.title}}</h5>
+					        <p class="card-text">{{elem.content|safe|linebreaks|truncatewords:70}}</p>
+					        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								  <a class="btn btn-secondary"  href="{{elem.get_absolute_url}}" >Read more</a>
+								</div>
+					        <p class="card-text"><small class="text-muted">Created {{elem.creation_date|timesince}} ago</small></p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				{% empty %}
+					<center><strong><p style="margin-top: 10%	;" >Sorry but there is no data here</p></strong></center>
+				{% endfor %}
+			</div>
+		</div>
+{% endblock %}

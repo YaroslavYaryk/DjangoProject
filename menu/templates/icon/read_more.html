@@ -1,0 +1,255 @@
+{% extends 'icon/base.html' %}
+{% load static %}    
+{% load menu_tags %}
+
+{% block link %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'menu/css/timer.css' %}">
+        {% if post.cat.ico %}
+            <link rel="icon" type="" href="{{post.cat.ico.url}}">
+        {% else %} 
+            <link rel="icon" type="" href="{% static 'menu/img/ico/infinity.png' %}">   
+        {% endif %}    
+      <title>{{post.title}}</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container" style="text-align: justify;">
+    <div class="card mb-3">
+
+      <div class="card-body">
+        <div class="card-header">
+            <h5 class="card-title post_name">{{post.title}}</h5>
+            <div class="header__block">
+                Category:
+                <a href="{{post.cat.get_absolute_url}}" class="link_cat"> {{post.cat|capfirst}}</a>
+            </div>
+        </div>
+        <p>
+            {% if post.photo %}
+                <img src="{{ post.photo.url }}" alt="Лейтенант Бокатуев" width="500px"  class="leftimg">
+            {% else %}
+                <img src="{% static 'menu/img/light_man_copy_26.png' %}" width="600px" class="img-fluid rounded-start" alt="...">  
+            {% endif %}
+     {{post.content|safe|linebreaks}}</p>
+
+    
+        {% if image %}
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner car_body" >
+            <div class="carousel-item active">
+              <img src="{{first.images.url}}" class="d-block w-100 car_image" alt="..."  >
+            </div>
+            {% for elem in image %}
+                {% if forloop.counter > 1 %}
+                    <div class="carousel-item ">
+                      <img src="{{elem.images.url}}" class="d-block w-100 car_image" alt="..."  >
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+
+          </div>
+
+        </div>
+        {% endif %}
+        {% if user.is_authenticated and user.username == "Admin" %}
+            <a href="{% url 'edit_page_model' post.slug %}" style="border-radius: 20px;" class="btn btn-primary btn-block mt-3 mb-3">Edit</a>
+            <a href="{% url 'delete_page_model' post.slug %}" style="border-radius: 20px;" class="btn btn-primary btn-block mt-3 mb-3">Delete</a>
+        
+        {% endif %}
+        <p class="card-text"><small class="text-muted">{{post.creation_date|date:'d.m.Y.H:i:s' }}</small></p>
+
+      </div>
+
+         <div class="card-footer d-flex justify-content-end">
+
+                <button class="btn btn-white mr-3 like" id="{{ post.id }}">
+                    {% if not is_liked %}
+                        <a href="{% url 'like_post' post.slug %}" style="color:#FF0000;" id="likebtn{{ post.id }}"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"    class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg> 
+                        </a>
+                        <span class="ml-3">{{post.likes.count}}</span>
+                    {% else %}
+                        <a href="{% url 'like_post' post.slug %}" style="color: red" id="likebtn{{ post.id }}">    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                         </a>
+                        <span class="ml-3"> {{post.likes.count}}</span>
+
+                    {% endif %}
+                </button>
+                
+              </div>
+    </div>
+    {% if user.is_authenticated %}
+        <div class="form ">
+            
+            <form action="" method="post" class="form_registr">
+                <legend align="right">Leave comment</legend>
+                {% csrf_token %}
+                <div class="form-group-reg">
+                    <div class="form-group-reg">
+                        <label for="{{form.username.id_for_label}}">Username</label>
+                        {{form.username}}
+                        <div class="form-error">
+                            {{form.username.errors}}
+                        </div>
+                    </div>
+                        
+                    <div class="form-group-reg">
+                        <label for="{{form.comment.id_for_label}}">Comment</label>
+                        {{form.comment}}
+                        <div class="form-error">
+                            {{form.comment.errors}}
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="button_fiels">
+                    <button type="submit" class="btn btn-success btn-block reg_butt">Comment</button>
+                    {% if 'pause' in request.session %}
+                        <ul id="timer" class="timer">
+                            <li class="number1  timer-number"></li>
+                            <li class="number2  timer-number"></li>
+                            <li class="number3  timer-number"></li>
+                            <li class="number4  timer-number"></li>
+                            <li class="number5  timer-number"></li>
+                            <li class="number6  timer-number"></li>
+                            <li class="number7  timer-number"></li>
+                            <li class="number8  timer-number"></li>
+                            <li class="number9  timer-number"></li>
+                            <li class="number10  timer-number"></li>
+                            <li class="number11  timer-number"></li>
+                            <li class="number12  timer-number"></li>
+                            <li class="number13  timer-number"></li>
+                            <li class="number14  timer-number"></li>
+                            <li class="number15  timer-number"></li>
+                            <li class="number16  timer-number"></li>
+                            <li class="number17  timer-number"></li>
+                            <li class="number18  timer-number"></li>
+                            <li class="number19  timer-number"></li>
+                            <li class="number20  timer-number"></li>
+                            <li class="number21  timer-number"></li>
+                            <li class="number22  timer-number"></li>
+                            <li class="number23  timer-number"></li>
+                            <li class="number24  timer-number"></li>
+                            <li class="number25  timer-number"></li>
+                            <li class="number26  timer-number"></li>
+                            <li class="number27  timer-number"></li>
+                            <li class="number28  timer-number"></li>
+                            <li class="number29  timer-number"></li>
+                            <li class="number30  timer-number"></li>
+                            <li class="number31  timer-number"></li>
+                            <li class="number32  timer-number"></li>
+                            <li class="number33  timer-number"></li>
+                            <li class="number34  timer-number"></li>
+                            <li class="number35  timer-number"></li>
+                            <li class="number36  timer-number"></li>
+                            <li class="number37  timer-number"></li>
+                            <li class="number38  timer-number"></li>
+                            <li class="number39  timer-number"></li>
+                            <li class="number40  timer-number"></li>
+                            <li class="number41  timer-number"></li>
+                            <li class="number42  timer-number"></li>
+                            <li class="number43  timer-number"></li>
+                            <li class="number44  timer-number"></li>
+                            <li class="number45  timer-number"></li>
+                            <li class="number46  timer-number"></li>
+                            <li class="number47  timer-number"></li>
+                            <li class="number48  timer-number"></li>
+                            <li class="number49  timer-number"></li>
+                            <li class="number50  timer-number"></li>
+                            <li class="number51  timer-number"></li>
+                            <li class="number52  timer-number"></li>
+                            <li class="number53  timer-number"></li>
+                            <li class="number54  timer-number"></li>
+                            <li class="number55  timer-number"></li>
+                            <li class="number56  timer-number"></li>
+                            <li class="number57  timer-number"></li>
+                            <li class="number58  timer-number"></li>
+                            <li class="number59  timer-number"></li>
+                            <li class="number60  timer-number"></li>
+                        </ul> 
+                    {% endif %}
+
+                </div>
+            </form>
+        </div> 
+
+
+
+    {% else %}
+        <h5>
+            to left comment you need to <a href="{% url 'sign_in' %}" class="btn btn-success btn-block ">
+              sign in  
+            </a> 
+        </h5>
+
+    {% endif %}
+
+    <div class="comments">
+          {% for comment in comments %}
+            <h3>👉{{ comment.username }}👈</h3>
+            <div class="comment__body">
+                {% if comment.len > 168 %}
+                    <details>
+                        <summary>{{ comment.comment|slice:":168"}}</summary>
+                        {{comment.comment|slice:"168:"}}    
+                    </details> 
+                {% else %}    
+                    <p> {{ comment.comment }} </p>
+
+                {% endif %}
+                <!-- like button -->
+                <form action="{% url 'comment_like' comment.pk %}" method="POST">
+                    {% csrf_token %}
+
+                    <button class="btn btn-white mr-3 like" type="submit" name="comment_id" value="{{comment.id}}" >
+
+                        {% for like in comment_likes %}
+
+                            {% if like.post_comment.comment == comment.comment and like.user == user %}
+                                
+                                {% if like.choice == "No" %}
+                                    <a href="{% url 'comment_like' comment.pk %}" style="color:#FF0000;" id="likebtn{{ post.id }}"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"    class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                            </svg> 
+                                    </a>
+                                    <span class="ml-3">{{comment.get_comment_likes}}</span>
+                                {% elif like.choice == "Yes" %}
+                                    <a href="{% url 'comment_like' comment.pk %}" style="color:#FF0000;" id="likebtn{{ post.id }}"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                            </svg>
+                                    </a>
+                                    <span class="ml-3">{{comment.get_comment_likes}}</span>
+
+                                {% elif like.choice == "medium" %}
+                                    <a href="{% url 'comment_like' comment.pk %}" style="color:#00FF00;" id="likebtn{{ post.id }}"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                            </svg>
+                                    </a>
+                                    <span class="ml-3">{{comment.get_comment_likes}}</span>    
+                                {% endif %}        
+                            {% endif %}
+                        {% endfor %}        
+                    </button>
+                </form>
+            </div>
+
+            
+            <hr>
+          {% endfor %}
+      </div>
+
+</div>
+{% endblock %}

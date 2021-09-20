@@ -1,0 +1,22 @@
+{% extends "icon/base.html" %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" type="" href="{% static ico %}">
+    <title>Deleting {{title}}</title>
+{% endblock %}
+
+{% block content %}
+    <center>
+        <div class="section_delete" style="background: #F4E677;">
+            <h3 class="quest">You really wanna delete {{title}}???</h3> 
+            <form method="post">
+                {% csrf_token %}
+                <div class="item">
+                    <button class="btn btn-primary btn-block" style="margin-left: -20%;" > Delete </button>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Cancel</a>
+                </div>    
+            </form>
+        </div>    
+    </center>    
+{% endblock %}

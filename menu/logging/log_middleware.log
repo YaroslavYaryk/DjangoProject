@@ -1,0 +1,29 @@
+2021-09-16 18:38:44.671 | ERROR    | core.middleware:process_exception:28 - object of type 'HttpResponseRedirect' has no len()
+2021-09-16 18:41:28.014 | ERROR    | core.middleware:process_exception:28 - object of type 'HttpResponseRedirect' has no len()
+2021-09-16 18:42:10.474 | ERROR    | core.middleware:process_exception:28 - object of type 'HttpResponseRedirect' has no len()
+2021-09-16 18:42:21.542 | ERROR    | core.middleware:process_exception:28 - object of type 'HttpResponseRedirect' has no len()
+2021-09-16 18:42:27.752 | ERROR    | core.middleware:process_exception:28 - object of type 'HttpResponseRedirect' has no len()
+2021-09-16 18:43:03.265 | ERROR    | core.middleware:process_exception:28 - Reverse for '' not found. '' is not a valid view function or pattern name.
+2021-09-16 19:03:55.012 | ERROR    | core.middleware:process_exception:28 - Could not parse the remainder: '{elem.get_absolute_url' from '{elem.get_absolute_url'
+2021-09-16 19:04:14.015 | ERROR    | core.middleware:process_exception:28 - Could not parse the remainder: '{elem.get_absolute_url' from '{elem.get_absolute_url'
+2021-09-17 06:30:18.706 | ERROR    | core.middleware:process_exception:28 - Reverse for 'post' with arguments '('d', 'a', 'f', 'a', 'd', 's', 's', 'a', 'd', 's', 'a', 'd', 'a', 's', 'd')' not found. 1 pattern(s) tried: ['post/(?P<slug_id>[-a-zA-Z0-9_]+)$']
+2021-09-17 06:31:17.684 | ERROR    | core.middleware:process_exception:28 - Reverse for 'post' with arguments '('d', 'a', 'f', 'a', 'd', 's', 's', 'a', 'd', 's', 'a', 'd', 'a', 's', 'd')' not found. 1 pattern(s) tried: ['post/(?P<slug_id>[-a-zA-Z0-9_]+)$']
+2021-09-20 06:41:48.329 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:42:36.550 | ERROR    | core.middleware:process_exception:28 - [Errno -3] Temporary failure in name resolution
+2021-09-20 06:51:21.373 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:51:33.868 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'icon/order_folders/failed_list.txt'
+2021-09-20 06:52:03.519 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:52:10.055 | ERROR    | core.middleware:process_exception:28 - [Errno 2] No such file or directory: 'order_folders/failed_list.txt'
+2021-09-20 06:52:53.212 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:57:00.161 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:57:00.549 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 06:58:09.902 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:02:18.327 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:02:28.479 | ERROR    | core.middleware:process_exception:28 - 'NoneType' object has no attribute 'send'
+2021-09-20 07:03:23.761 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:03:32.550 | ERROR    | core.middleware:process_exception:28 - 'NoneType' object has no attribute 'send'
+2021-09-20 07:15:06.559 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:15:21.688 | ERROR    | core.middleware:process_exception:28 - 'NoneType' object has no attribute 'send'
+2021-09-20 07:15:36.387 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:18:45.047 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-20 07:19:30.240 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'

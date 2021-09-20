@@ -1,0 +1,39 @@
+{% extends "icon/base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% load thumbnail %}
+
+
+{% block link %}
+	   	<link rel="icon" type="" href="{% static 'menu/img/ico/home_pink.png' %}">
+	   	<title>bootstrap</title>
+	   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	   	<style>
+	   		
+	   	</style>
+{% endblock %}
+
+{% block content %}
+	<form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons submit='Добавить' %}{% endbuttons %}
+    	{% bootstrap_button content='Сохранить' size="large" button_type='submit' button_class=' btn-secondary' %}
+ 
+    	{% bootstrap_field form.title placeholder="Enter your text" addon_before="Title" show_label=True  %}
+
+    	<!-- {% bootstrap_alert content='<p>Pyбpикa добавлена</р>' alert_type='info' %}
+    	{% bootstrap_alert content='<p>Pyбpикa добавлена</р>' alert_type='warning' %}
+    	{% bootstrap_alert content='<p>Pyбpикa добавлена</р>' alert_type='success' %}
+ -->
+ 
+	<img src=" {% thumbnail wom.photo 'default' %} ">
+    </form>
+  
+
+
+
+
+
+
+{% endblock %}

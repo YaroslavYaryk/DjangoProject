@@ -1,0 +1,110 @@
+{% extends "icon/base.html" %}
+{% load static %}
+
+{% load menu_tags %}
+
+{% block link %}
+	{% get_category as store %}
+	<title>{{cat_slug|capfirst}}</title>
+	{% for elem in store %}
+		{% if elem.ico %}
+			<link rel="icon" type="" href="{{elem.ico.url}}"> 	
+		{% endif %}
+	{% endfor %}			
+{% endblock %}
+
+{% block list %}
+{% get_category_spec as store %}
+	{% for elem in store %}
+		{% if elem.slug == cat_slug %}
+		  	<li class="nav-item">
+		    	<a href="{{elem.get_absolute_url}}" class="nav-link link-dark new-link grid_link" aria-current="page" style="background: #ECBBBB;">
+					<span class="link__name">{{elem.name}}</span>
+          			<span class="link__count">{{elem.cnt}}</span>
+
+		    	</a>
+		  	</li>
+		{% else %}
+			<li class="nav-item">
+		    	<a href="{{elem.get_absolute_url}}" class="nav-link link-dark new-link grid_link" aria-current="page">
+		          	<span class="link__name">{{elem.name}}</span>
+          			<span class="link__count">{{elem.cnt}}</span>
+		    	</a>
+		  	</li>
+		{% endif %} 
+	{% empty %}
+				<center><strong><p style="margin-top: 10%	;" >Sorry but there is no data here</p></strong></center>	 
+	{% endfor %}
+
+
+{% endblock %}
+
+{% block search %}
+
+	<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action=" {% url 'home' %} " method="get">
+        <input type="search" class="form-control form__search" placeholder="Search..." name="search" aria-label="Search">
+    </form>
+	
+{% endblock %}
+
+
+{% block order %}
+	{% if storage|length > 1 %}
+		
+		<div class="d-flex justify-content-md-end box">
+		 	<form action=''>
+		 		<select name="order2" id="order2" >
+		 			{% if order %}
+						<option class="dropdown-item active-item" value="{{order}}">{{order}}</option>
+
+					{% endif %}	
+				  
+					{% for elem in order_list %}
+						{% if not elem == order %}
+							<option value="{{elem}}">{{elem}}</option>
+
+						{% endif %}	
+					{% endfor %}
+				</select>
+				<input type="submit" value="Order">
+		 	</form>
+		</div>
+	{% endif %}
+{% endblock %}
+
+
+{% block content %}
+	<div class="container" >
+			<div class="row">
+				{% for item in storage %}
+					<div class="card mb-3" style="max-width: 1300px;">
+					  <div class="row g-0">
+					    <div class="col-md-4">
+					    	<div class="card-header">
+	                        	Category:
+							    <a href="{{item.cat.get_absolute_url}}" class="link_cat"> {{item.cat|capfirst}}</a>
+              				</div>
+              			  {% if item.photo %}
+					      	<img src="{{item.photo.url}}" width="600px" class="img-fluid rounded-start img_face" alt="...">
+					      {% else %}
+					      		<img src="{% static 'menu/img/light_man_copy_26.png' %}" width="600px" class="img-fluid rounded-start" alt="...">	
+					      {% endif %}
+					    </div>
+
+					    <div class="col-md-8">
+
+					      <div class="card-body">
+					        <h5 class="card-title">{{item.title}}</h5>
+					        <p class="card-text">{{item.content|safe|linebreaks|truncatewords:70}}</p>
+					        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								  <a class="btn btn-secondary" href="{{item.get_absolute_url}}" >Read more</a>
+								</div>
+					        <p class="card-text"><small class="text-muted">Created {{item.creation_date|timesince}} ago</small></p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+{% endblock %}

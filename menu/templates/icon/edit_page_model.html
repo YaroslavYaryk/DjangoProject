@@ -1,0 +1,38 @@
+{% extends "icon/base.html" %}
+{% load static %}
+
+{% block link %}
+	   	<link rel="icon" type="" href="{% static ico %}">
+	   	<title>{{title}}</title>
+	{% endblock %}
+
+
+{% block content %}
+		<div class="container">
+			<h3 class="head-form">Editing new post</h3>
+			<form  method="post" enctype="multipart/form-data" 
+			style="width: 94%; margin-left: 20px;">
+				{% csrf_token %}
+
+				{% if form.non_field_errors %}
+				   {{form.non_field_errors}}  
+			    {% endif %}
+				{% for f in form %}
+					<p>
+						<label class="form-label" for="{{ f.id_for_label }}">
+							{{f.label}}: 
+						</label>{{ f }}
+
+					</p>
+					<div class="form-error" style="color: red;">
+						{{ f.errors }}
+					</div>
+				{% endfor %}
+				<!-- <img src="{{form.photo}}"> -->
+				<button type="submit" style="margin-left: 25%; border-radius: 20px;" class="btn btn-primary btn-block" >Save news</button>
+			</form>
+		</div>
+
+	
+
+{% endblock %}

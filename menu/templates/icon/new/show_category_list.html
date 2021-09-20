@@ -1,0 +1,9 @@
+{% for elem in cats %}
+	  	<li class="nav-item">
+	    	<a href="{{elem.get_absolute_url}}" class="nav-link link-dark new-link grid_link" aria-current="page">
+	          	<span class="link__name">{{elem.name}}</span>
+	          	<span class="link__count">{{elem.cnt}}</span>
+	          	 
+	    	</a>
+	  	</li>
+{% endfor %}

@@ -1,0 +1,499 @@
+* {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: order-box;
+                box-sizing: order-box;
+      }
+      
+      body {
+        margin: auto;
+      }
+      
+      .timer {
+        border: solid 1px;
+        height: calc(2vw);
+        width: calc(2vw);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        list-style-type: none;
+        position: relative;
+        border-radius: 50%;
+        counter-reset: lis -1;
+        -webkit-transform: rotate(-86deg);
+                transform: rotate(-86deg);
+        color: gray;
+      }
+      
+      .number60 {
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        position: relative;
+        left: 0;
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-animation: show 0s 0s forwards;
+                animation: show 0s 0s forwards;
+      }
+      
+      .number60::before {
+        display: inline-block;
+        content: counter(lis);
+        -webkit-transform: rotate(86deg);
+                transform: rotate(86deg);
+        font-size: 0;
+        margin: auto;
+      }
+      
+      .timer-number {
+        -webkit-transform-origin: bottom left;
+                transform-origin: bottom left;
+        position: absolute;
+        border-top: solid 1px;
+        width: 50%;
+        left: 50%;
+        -webkit-box-shadow: 0 1px 1px black;
+                box-shadow: 0 1px 1px black;
+        visibility: hidden;
+        -webkit-animation: show 1s forwards;
+                animation: show 1s forwards;
+      }
+      @-webkit-keyframes show {
+        0%, 100% {
+          visibility: visible;
+          counter-increment: lis;
+        }
+      }
+      @keyframes show {
+        0%, 100% {
+          visibility: visible;
+          counter-increment: lis;
+        }
+      }
+      
+      .number1 {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+      }
+      
+      .number2 {
+        -webkit-transform: rotate(6deg);
+                transform: rotate(6deg);
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+      }
+      
+      .number3 {
+        -webkit-transform: rotate(12deg);
+                transform: rotate(12deg);
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+      }
+      
+      .number4 {
+        -webkit-transform: rotate(18deg);
+                transform: rotate(18deg);
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
+      }
+      
+      .number5 {
+        -webkit-transform: rotate(24deg);
+                transform: rotate(24deg);
+        -webkit-animation-delay: 4s;
+                animation-delay: 4s;
+      }
+      
+      .number6 {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+      }
+      
+      .number7 {
+        -webkit-transform: rotate(36deg);
+                transform: rotate(36deg);
+        -webkit-animation-delay: 6s;
+                animation-delay: 6s;
+      }
+      
+      .number8 {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+        -webkit-animation-delay: 7s;
+                animation-delay: 7s;
+      }
+      
+      .number9 {
+        -webkit-transform: rotate(48deg);
+                transform: rotate(48deg);
+        -webkit-animation-delay: 8s;
+                animation-delay: 8s;
+      }
+      
+      .number10 {
+        -webkit-transform: rotate(54deg);
+                transform: rotate(54deg);
+        -webkit-animation-delay: 9s;
+                animation-delay: 9s;
+      }
+      
+      .number11 {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+        -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+      }
+      
+      .number12 {
+        -webkit-transform: rotate(66deg);
+                transform: rotate(66deg);
+        -webkit-animation-delay: 11s;
+                animation-delay: 11s;
+      }
+      
+      .number13 {
+        -webkit-transform: rotate(72deg);
+                transform: rotate(72deg);
+        -webkit-animation-delay: 12s;
+                animation-delay: 12s;
+      }
+      
+      .number14 {
+        -webkit-transform: rotate(78deg);
+                transform: rotate(78deg);
+        -webkit-animation-delay: 13s;
+                animation-delay: 13s;
+      }
+      
+      .number15 {
+        -webkit-transform: rotate(84deg);
+                transform: rotate(84deg);
+        -webkit-animation-delay: 14s;
+                animation-delay: 14s;
+      }
+      
+      .number16 {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+      }
+      
+      .number17 {
+        -webkit-transform: rotate(96deg);
+                transform: rotate(96deg);
+        -webkit-animation-delay: 16s;
+                animation-delay: 16s;
+      }
+      
+      .number18 {
+        -webkit-transform: rotate(102deg);
+                transform: rotate(102deg);
+        -webkit-animation-delay: 17s;
+                animation-delay: 17s;
+      }
+      
+      .number19 {
+        -webkit-transform: rotate(108deg);
+                transform: rotate(108deg);
+        -webkit-animation-delay: 18s;
+                animation-delay: 18s;
+      }
+      
+      .number20 {
+        -webkit-transform: rotate(114deg);
+                transform: rotate(114deg);
+        -webkit-animation-delay: 19s;
+                animation-delay: 19s;
+      }
+      
+      .number21 {
+        -webkit-transform: rotate(120deg);
+                transform: rotate(120deg);
+        -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+      }
+      
+      .number22 {
+        -webkit-transform: rotate(126deg);
+                transform: rotate(126deg);
+        -webkit-animation-delay: 21s;
+                animation-delay: 21s;
+      }
+      
+      .number23 {
+        -webkit-transform: rotate(132deg);
+                transform: rotate(132deg);
+        -webkit-animation-delay: 22s;
+                animation-delay: 22s;
+      }
+      
+      .number24 {
+        -webkit-transform: rotate(138deg);
+                transform: rotate(138deg);
+        -webkit-animation-delay: 23s;
+                animation-delay: 23s;
+      }
+      
+      .number25 {
+        -webkit-transform: rotate(144deg);
+                transform: rotate(144deg);
+        -webkit-animation-delay: 24s;
+                animation-delay: 24s;
+      }
+      
+      .number26 {
+        -webkit-transform: rotate(150deg);
+                transform: rotate(150deg);
+        -webkit-animation-delay: 25s;
+                animation-delay: 25s;
+      }
+      
+      .number27 {
+        -webkit-transform: rotate(156deg);
+                transform: rotate(156deg);
+        -webkit-animation-delay: 26s;
+                animation-delay: 26s;
+      }
+      
+      .number28 {
+        -webkit-transform: rotate(162deg);
+                transform: rotate(162deg);
+        -webkit-animation-delay: 27s;
+                animation-delay: 27s;
+      }
+      
+      .number29 {
+        -webkit-transform: rotate(168deg);
+                transform: rotate(168deg);
+        -webkit-animation-delay: 28s;
+                animation-delay: 28s;
+      }
+      
+      .number30 {
+        -webkit-transform: rotate(174deg);
+                transform: rotate(174deg);
+        -webkit-animation-delay: 29s;
+                animation-delay: 29s;
+      }
+      
+      .number31 {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+        -webkit-animation-delay: 30s;
+                animation-delay: 30s;
+      }
+      
+      .number32 {
+        -webkit-transform: rotate(186deg);
+                transform: rotate(186deg);
+        -webkit-animation-delay: 31s;
+                animation-delay: 31s;
+      }
+      
+      .number33 {
+        -webkit-transform: rotate(192deg);
+                transform: rotate(192deg);
+        -webkit-animation-delay: 32s;
+                animation-delay: 32s;
+      }
+      
+      .number34 {
+        -webkit-transform: rotate(198deg);
+                transform: rotate(198deg);
+        -webkit-animation-delay: 33s;
+                animation-delay: 33s;
+      }
+      
+      .number35 {
+        -webkit-transform: rotate(204deg);
+                transform: rotate(204deg);
+        -webkit-animation-delay: 34s;
+                animation-delay: 34s;
+      }
+      
+      .number36 {
+        -webkit-transform: rotate(210deg);
+                transform: rotate(210deg);
+        -webkit-animation-delay: 35s;
+                animation-delay: 35s;
+      }
+      
+      .number37 {
+        -webkit-transform: rotate(216deg);
+                transform: rotate(216deg);
+        -webkit-animation-delay: 36s;
+                animation-delay: 36s;
+      }
+      
+      .number38 {
+        -webkit-transform: rotate(222deg);
+                transform: rotate(222deg);
+        -webkit-animation-delay: 37s;
+                animation-delay: 37s;
+      }
+      
+      .number39 {
+        -webkit-transform: rotate(228deg);
+                transform: rotate(228deg);
+        -webkit-animation-delay: 38s;
+                animation-delay: 38s;
+      }
+      
+      .number40 {
+        -webkit-transform: rotate(234deg);
+                transform: rotate(234deg);
+        -webkit-animation-delay: 39s;
+                animation-delay: 39s;
+      }
+      
+      .number41 {
+        -webkit-transform: rotate(240deg);
+                transform: rotate(240deg);
+        -webkit-animation-delay: 40s;
+                animation-delay: 40s;
+      }
+      
+      .number42 {
+        -webkit-transform: rotate(246deg);
+                transform: rotate(246deg);
+        -webkit-animation-delay: 41s;
+                animation-delay: 41s;
+      }
+      
+      .number43 {
+        -webkit-transform: rotate(252deg);
+                transform: rotate(252deg);
+        -webkit-animation-delay: 42s;
+                animation-delay: 42s;
+      }
+      
+      .number44 {
+        -webkit-transform: rotate(258deg);
+                transform: rotate(258deg);
+        -webkit-animation-delay: 43s;
+                animation-delay: 43s;
+      }
+      
+      .number45 {
+        -webkit-transform: rotate(264deg);
+                transform: rotate(264deg);
+        -webkit-animation-delay: 44s;
+                animation-delay: 44s;
+      }
+      
+      .number46 {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+        -webkit-animation-delay: 45s;
+                animation-delay: 45s;
+      }
+      
+      .number47 {
+        -webkit-transform: rotate(276deg);
+                transform: rotate(276deg);
+        -webkit-animation-delay: 46s;
+                animation-delay: 46s;
+      }
+      
+      .number48 {
+        -webkit-transform: rotate(282deg);
+                transform: rotate(282deg);
+        -webkit-animation-delay: 47s;
+                animation-delay: 47s;
+      }
+      
+      .number49 {
+        -webkit-transform: rotate(288deg);
+                transform: rotate(288deg);
+        -webkit-animation-delay: 48s;
+                animation-delay: 48s;
+      }
+      
+      .number50 {
+        -webkit-transform: rotate(294deg);
+                transform: rotate(294deg);
+        -webkit-animation-delay: 49s;
+                animation-delay: 49s;
+      }
+      
+      .number51 {
+        -webkit-transform: rotate(300deg);
+                transform: rotate(300deg);
+        -webkit-animation-delay: 50s;
+                animation-delay: 50s;
+      }
+      
+      .number52 {
+        -webkit-transform: rotate(306deg);
+                transform: rotate(306deg);
+        -webkit-animation-delay: 51s;
+                animation-delay: 51s;
+      }
+      
+      .number53 {
+        -webkit-transform: rotate(312deg);
+                transform: rotate(312deg);
+        -webkit-animation-delay: 52s;
+                animation-delay: 52s;
+      }
+      
+      .number54 {
+        -webkit-transform: rotate(318deg);
+                transform: rotate(318deg);
+        -webkit-animation-delay: 53s;
+                animation-delay: 53s;
+      }
+      
+      .number55 {
+        -webkit-transform: rotate(324deg);
+                transform: rotate(324deg);
+        -webkit-animation-delay: 54s;
+                animation-delay: 54s;
+      }
+      
+      .number56 {
+        -webkit-transform: rotate(330deg);
+                transform: rotate(330deg);
+        -webkit-animation-delay: 55s;
+                animation-delay: 55s;
+      }
+      
+      .number57 {
+        -webkit-transform: rotate(336deg);
+                transform: rotate(336deg);
+        -webkit-animation-delay: 56s;
+                animation-delay: 56s;
+      }
+      
+      .number58 {
+        -webkit-transform: rotate(342deg);
+                transform: rotate(342deg);
+        -webkit-animation-delay: 57s;
+                animation-delay: 57s;
+      }
+      
+      .number59 {
+        -webkit-transform: rotate(348deg);
+                transform: rotate(348deg);
+        -webkit-animation-delay: 58s;
+                animation-delay: 58s;
+      }
+      
+      .number60 {
+        -webkit-transform: rotate(354deg);
+                transform: rotate(354deg);
+        -webkit-animation-delay: 59s;
+                animation-delay: 59s;
+      }

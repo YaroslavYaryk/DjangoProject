@@ -1,0 +1,13 @@
+.wrapper{
+	display: grid;
+	grid-template-columns: 280px 1fr;
+
+}
+.content .container .row p{
+	text-align: justify;
+}
+
+.btn{
+	background: #F999C3;
+	color: #271B50;
+}
