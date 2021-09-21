@@ -1,6 +1,8 @@
 {% extends 'icon/base.html' %}
 {% load static %}    
 {% load menu_tags %}
+{% load cache %}
+
 
 {% block link %}
 
@@ -13,7 +15,6 @@
       <title>{{post.title}}</title>
 
 {% endblock %}
-
 
 {% block content %}
 

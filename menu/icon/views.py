@@ -26,8 +26,8 @@ from core.views import base_views
 from loguru import logger as log
 from .utils import menu
 from django.core.mail import send_mail, BadHeaderError, EmailMessage, EmailMultiAlternatives
-from django.core.mail import mail_admins
-
+from django.views.decorators.cache import cache_page, never_cache
+from django.views.decorators.vary import vary_on_headers
 
 comment_is_liked = []
 
@@ -69,7 +69,7 @@ class Home_page(DataMixin, CapMixin, ListView):
     def get(self, request, *args, **kwargs):  # get all the consistence of input field
 
         global order
-        self.search_query = request.GT.get("search", "")
+        self.search_query = request.GET.get("search", "")
         self.order_query = request.GET.get("order", "")
         if self.order_query and order != self.order_query:
             order = self.order_query
@@ -113,7 +113,7 @@ class Home_page(DataMixin, CapMixin, ListView):
         return Woman.objects.filter(is_published=True).order_by(self.get_choice()).select_related("cat")
         # to find only those element we need
 
-
+@never_cache
 def storage(request):
 
     contact_list = Woman.objects.all()
@@ -366,16 +366,7 @@ class WomanAbout(DataMixin, TemplateView):
         return dict(list(context.items()) + list(c_def.items()))
 
 
-@base_views
-def get_sign(request):
-
-    storage = {
-        "menu": menu
-    }
-
-    return render(request, 'icon/sign_in.html', context=storage)
-
-
+@never_cache
 @base_views
 def get_someth(request):
 
@@ -402,12 +393,13 @@ class RegisterUser(DataMixin, SuccessMessageMixin, CreateView):
             title="Registration", ico="menu/img/ico/home_pink.png")
         return dict(list(context.items()) + list(c_def.items()))
 
+
+@never_cache
 def send_mail_register(request):
 
     user = User.objects.order_by("-id").first() #get last registered
     message = "Thanks for taking our site, i'm really dekightful that you're here, keep on developing, you've got this"
     user.email_user('Welcome', message , fail_silently=True)
-
 
     return HttpResponseRedirect(reverse("sign_in"))
 
@@ -453,6 +445,7 @@ class ProfileView(DataMixin, ListView):
         return dict(list(context.items()) + list(c_def.items()))
 
 
+@never_cache
 @base_views
 def likeView(request, pk):
     """ function for adding like to our post """
@@ -482,6 +475,7 @@ def likeView(request, pk):
     return response
 
 
+@never_cache
 @base_views
 def commentLikeView(request, like_id):  # press like
     """ make hitting comment like """
@@ -517,6 +511,7 @@ def commentLikeView(request, like_id):  # press like
     return redirect("post", slug_id=f"{comment.post.slug}")
 
 
+@never_cache
 def get_client_ip(request):  # get current ip address
 
     x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
@@ -527,11 +522,13 @@ def get_client_ip(request):  # get current ip address
     return ip
 
 
+@never_cache
 def show_ip(request):  # just for check ip address
     a = get_client_ip(request)
     return HttpResponse(f"ip is {a} ")
 
 
+@never_cache
 # @base_views
 def tmp_views(request):
 
@@ -541,6 +538,7 @@ def tmp_views(request):
     return JsonResponse({"success": True})
 
 
+@never_cache
 def django_boottstrap(request):
 
     form = ""
@@ -557,6 +555,7 @@ def django_boottstrap(request):
                                                            "wom": Woman.objects.get(pk=11)})
 
 
+@vary_on_headers("YAryk31")
 def send_feedback(request):
 
     if request.method == 'POST':
@@ -589,12 +588,16 @@ def send_feedback(request):
 
 def setcookie(request):
 
-    em = EmailMultiAlternatives(subject='Test', body='Test',
-                                to=['duhanov2003@gmail.com'])
-    em.attach_alternative('<hl>Nice practice to use all of this types</hl>', 'text/html')
-    em.send()
-    return HttpResponseRedirect(reverse("home"))
+    # em = EmailMultiAlternatives(subject='Test', body='Test',
+    #                             to=['duhanov2003@gmail.com'])
+    # em.attach_alternative('<hl>Nice practice to use all of this types</hl>', 'text/html')
+    # em.send()
+    # return HttpResponseRedirect(reverse("home"))
+    pass
 
+@cache_page(60 * 15)
+def know_more(request):
+    return render(request, "icon/know_more.html", context={"menu" : menu})
 
 # class SortPosts(DataMixin, CreateView):
 

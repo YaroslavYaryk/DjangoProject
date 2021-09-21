@@ -2,6 +2,7 @@ from django.urls import path
 from .views import *
 from django.views.decorators.cache import cache_page
 
+
 urlpatterns = [
     path("", Home_page.as_view(), name="home"),
     path("someth/", get_someth),
@@ -10,7 +11,7 @@ urlpatterns = [
     path("edit/<slug:slug_name>", WomanEditView.as_view(), name="edit_page_model"),
     path("delete/<slug:slug_title>",
          WomanDeleteView.as_view(), name="delete_page_model"),
-    path("about/", WomanAbout.as_view(), name="about"),
+    path("about/", cache_page(60 * 15)(WomanAbout.as_view()), name="about"),
     path("post/<slug:slug_id>", NewsNyCategory.as_view(), name="post"),
     # path("categories/<path:category_name>", cache_page(60)(WomanCategory.as_view()),
     #      name="category"),  # adding name to the path with cache 60 seconds

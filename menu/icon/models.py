@@ -11,7 +11,6 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db.models.functions import *
-from django.contrib import auth
 
 
 class WomanFlterShowLenContent(models.Manager):
@@ -80,8 +79,6 @@ class Woman(models.Model):
     cat = models.ForeignKey("Category", on_delete=models.PROTECT,
                             verbose_name="Category",
                             )  # add field from another model
-
-    user = models.OneToOneField(auth.models.User, null=True, on_delete=models.SET_NULL)
 
     notes = GenericRelation('Note')
 

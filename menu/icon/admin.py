@@ -32,9 +32,12 @@ class WomanAdmin(admin.ModelAdmin):
     list_editable = ["is_published"]
     prepopulated_fields = {"slug": ("title",)}
     fields = ("title", "slug", "content",  "photo" , "get_photo" , "is_published", 
-                     "cat",  "updation_date", "creation_date",)
+                     "cat",  ("updation_date", "creation_date"),)
     readonly_fields = ("get_photo", "updation_date", "creation_date",)
-
+    list_per_page = 200 #max post per page
+    list_max_show_all = 50 #max posts after clicking on hyperref
+    actions_on_bottom = True #drop down with movents on the bottom as well
+    view_on_site = True
     empty_value_display = 'unknown' #empty one of values
 
     inlines = [WomanImageInline]

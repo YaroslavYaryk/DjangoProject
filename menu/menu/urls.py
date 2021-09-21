@@ -35,8 +35,8 @@ urlpatterns = [
     path("accounts/reset/<uidb64>/<token>/", auth_views.PasswordResetConfirmView.as_view(), name="password_reset_confirm"),
     path("accounts/password_reset_complete/", auth_views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
     path("accounts/profile/", ProfileView.as_view(), name="profile"),
-    path("sign_in/", LoginUser.as_view(), name="sign_in"),
-    path("register/", RegisterUser.as_view(), name="register"),
+    path("sign_in/",(LoginUser.as_view()), name="sign_in"),
+    path("register/",( RegisterUser.as_view()), name="register"),
     path("logout/<slug:admin_name>", LogoutUser.as_view(), name="logout"),
     
     path('accounts/password_change/', PasswordChangeView.as_view(
@@ -49,6 +49,7 @@ urlpatterns = [
     path("send_feedback/", send_feedback, name="send_feedback"), 
     path("cookie/", setcookie, name = "set_cookie"),   
     path("send_mail_register/", send_mail_register, name="send_mail_register"),
+    path("know_more/", know_more, name="know_more"),
 
     path('', include('social_django.urls', namespace='social')),
     path('__debug__/', include(debug_toolbar.urls)),
