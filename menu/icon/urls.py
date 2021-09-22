@@ -1,6 +1,11 @@
 from django.urls import path
 from .views import *
 from django.views.decorators.cache import cache_page
+from rest_framework import routers
+
+router = routers.SimpleRouter()
+
+router.register(r"categories_s", CategoryView, basename="category")
 
 
 urlpatterns = [
@@ -24,6 +29,8 @@ urlpatterns = [
     path("comment/like/<int:like_id>", commentLikeView, name = "comment_like"),
     path("tmp_views/", tmp_views),
     path("django_boottstrap/", django_boottstrap, name = "django_boottstrap"),
+    path("woman/", WomanView.as_view()),
+    path("woman/<int:pk>", WomanDetailView.as_view())
     
-]
+] + router.urls
 

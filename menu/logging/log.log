@@ -9133,3 +9133,149 @@ Traceback (most recent call last):
   File "/home/yaroslav/Python/Django/menu/icon/admin.py", line 77, in unpublish
     form = AskPermitionChange(initial={'_selected_action': request.POST.getlist()})
 TypeError: getlist() missing 1 required positional argument: 'key'
+2021-09-22 16:07:12,556  django.request ERROR    <--> Internal Server Error: /woman/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/lib/python3.8/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+2021-09-22 16:08:15,589  django.request ERROR    <--> Internal Server Error: /woman/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 613, in get
+    return Response(serializer.data)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1083, in get_field_names
+    raise TypeError(
+TypeError: The `fields` option must be a list or tuple or "__all__". Got set.
+2021-09-22 16:18:20,446  django.request ERROR    <--> Internal Server Error: /woman/1
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 622, in get
+    return Response(serializer.data)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1089, in get_field_names
+    raise TypeError(
+TypeError: The `exclude` option must be a list or tuple. Got str.
+2021-09-22 16:18:21,329  django.request ERROR    <--> Internal Server Error: /woman/1
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 622, in get
+    return Response(serializer.data)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/rest_framework/serializers.py", line 1089, in get_field_names
+    raise TypeError(
+TypeError: The `exclude` option must be a list or tuple. Got str.

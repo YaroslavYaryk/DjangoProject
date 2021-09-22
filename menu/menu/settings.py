@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django_cleanup',
     'easy_thumbnails',
     "icon.apps.IconConfig",
+    'rest_framework',
+    'corsheaders',
 ]
 
 SESSION_ENGINE =  "django.contrib.sessions.backends.cache"
@@ -60,6 +62,7 @@ MESSAGE_TAGS = {
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

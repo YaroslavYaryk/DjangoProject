@@ -1,5 +1,7 @@
+from rest_framework.response import Response
+from rest_framework.serializers import Serializer
 from menu.settings import CRITICAL
-from re import search
+from re import I, search
 from django.contrib.messages.api import add_message
 from django.core.mail import send_mail
 from django.shortcuts import render, HttpResponseRedirect, get_object_or_404, redirect
@@ -28,6 +30,10 @@ from .utils import menu
 from django.core.mail import send_mail, BadHeaderError, EmailMessage, EmailMultiAlternatives
 from django.views.decorators.cache import cache_page, never_cache
 from django.views.decorators.vary import vary_on_headers
+from rest_framework.views import APIView
+from .serializers import WomanSerializer, WomanDetailSerializer,CategorySerializer
+from rest_framework.viewsets import ModelViewSet
+
 
 comment_is_liked = []
 
@@ -597,6 +603,46 @@ def setcookie(request):
 @cache_page(60 * 15)
 def know_more(request):
     return render(request, "icon/know_more.html", context={"menu" : menu})
+
+
+class WomanView(APIView):
+    """ all news"""
+    
+    def get(self, request):
+        woman = Woman.objects.filter(is_published=True)
+        serializer = WomanSerializer(woman, many=True)
+        return Response(serializer.data)
+
+
+class WomanDetailView(APIView):
+    """ detail news"""
+    
+    def get(self, request, pk):
+        woman = Woman.objects.get(id=pk, is_published=True)
+        serializer = WomanDetailSerializer(woman)
+        return Response(serializer.data)
+
+
+class CategoryView(ModelViewSet):
+    """ Category view """
+
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # class SortPosts(DataMixin, CreateView):
 
