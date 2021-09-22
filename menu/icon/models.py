@@ -48,7 +48,7 @@ class IpModel(models.Model):
 
     def __str__(self):
         return f"{self.ip}"
-
+    
 
 class Woman(models.Model):
 
@@ -110,6 +110,9 @@ class Woman(models.Model):
 
         self.photo.delete(save=False)
         super().delete(*args, **kwargs)
+
+    def get_view_count(self):
+        return self.ip.count()    
     
 
     # def get_total_view(self):

@@ -133,3 +133,7 @@ class FeedbackForm(forms.Form):
             "class": "form-control",
             "cols": 50,
             "rows": 10}))
+
+
+class AskPermitionChange(forms.Form): #ask permition when we want to unpublish post 
+    _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)            

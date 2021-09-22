@@ -8736,3 +8736,400 @@ Traceback (most recent call last):
   File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
     raise FieldError(
 django.core.exceptions.FieldError: Unknown field(s) (    ) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 05:47:09,484  django.request ERROR    <--> Internal Server Error: /post/some-new-staff
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post).select_related():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:48:33,484  django.request ERROR    <--> Internal Server Error: /post/some-new-staff
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post).select_related():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:49:47,338  django.request ERROR    <--> Internal Server Error: /post/some-new-staff
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post).select_related():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:51:01,057  django.request ERROR    <--> Internal Server Error: /post/some-new-staff
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:51:06,520  django.request ERROR    <--> Internal Server Error: /post/my-adventures
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:51:08,428  django.request ERROR    <--> Internal Server Error: /post/my-adventures
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 145, in get_context_data
+    if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'str' object has no attribute 'has_header'
+2021-09-22 05:55:53,619  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/20/change/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (ip.count) specified for Woman
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (ip.count) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 05:56:13,688  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/20/change/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (woman__ip.count) specified for Woman
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (woman__ip.count) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 05:59:38,986  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/20/change/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (get_views) specified for Woman
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (get_views) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 06:11:56,793  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/20/change/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (get_view_count) specified for Woman
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (get_view_count) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 06:13:34,476  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/20/change/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (get_count_views) specified for Woman
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (get_count_views) specified for Woman. Check fields/fieldsets/exclude attributes of class WomanAdmin.
+2021-09-22 06:52:49,780  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1723, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/Python/Django/menu/icon/admin.py", line 77, in unpublish
+    form = AskPermitionChange(initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+AttributeError: module 'django.contrib.admin' has no attribute 'ACTION_CHECKBOX_NAME'
+2021-09-22 06:53:30,397  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1723, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/Python/Django/menu/icon/admin.py", line 79, in unpublish
+    return render(request, 'icon/permition_to_change.html', {'items': queryset,'form': form, 'title':u'Изменение категории'})
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: icon/permition_to_change.html
+2021-09-22 06:55:49,342  django.request ERROR    <--> Internal Server Error: /admin/icon/woman/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1723, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1408, in response_action
+    response = func(self, request, queryset)
+  File "/home/yaroslav/Python/Django/menu/icon/admin.py", line 77, in unpublish
+    form = AskPermitionChange(initial={'_selected_action': request.POST.getlist()})
+TypeError: getlist() missing 1 required positional argument: 'key'

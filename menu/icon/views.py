@@ -142,7 +142,7 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
         post = Woman.objects.select_related().get(
             slug=self.kwargs["slug_id"])  # get current post
         # if not exists
-        if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post).select_related():
+        if not IpModel.objects.filter(ip=get_client_ip(self.request), post_news=post):
             IpModel.objects.create(ip=get_client_ip(
                 self.request), post_news=post)  # create new one
 
@@ -511,7 +511,6 @@ def commentLikeView(request, like_id):  # press like
     return redirect("post", slug_id=f"{comment.post.slug}")
 
 
-@never_cache
 def get_client_ip(request):  # get current ip address
 
     x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
