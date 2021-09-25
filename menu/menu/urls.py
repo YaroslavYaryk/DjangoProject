@@ -25,6 +25,9 @@ from menu import settings
 from django.contrib.auth import views as auth_views
 from icon.views import *
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
+from django.contrib.staticfiles.views import serve
+from django.views.decorators.cache import never_cache
+
 
 
 urlpatterns = [
@@ -61,6 +64,7 @@ urlpatterns = [
 
 if settings.DEBUG:
     import debug_toolbar
+    urlpatterns.append(path(' static/<path:path>', never_cache(serve)))
 
     urlpatterns = [
         path('__debug__/', include(debug_toolbar.urls)),

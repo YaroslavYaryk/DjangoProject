@@ -3,7 +3,7 @@ from rest_framework.serializers import Serializer
 from menu.settings import CRITICAL
 from re import I, search
 from django.contrib.messages.api import add_message
-from django.core.mail import send_mail
+from django.core.mail import message, send_mail
 from django.shortcuts import render, HttpResponseRedirect, get_object_or_404, redirect
 from django.http import JsonResponse, response
 from django.http import HttpResponse, HttpResponseNotFound
@@ -577,13 +577,15 @@ def send_feedback(request):
             mess = EmailMessage(
                 subject=subject,
                 body=f"FROM {body['username']} \nMESSAGE:\n{body['message']}\n{body['email']}",
-                to=["duhanov2003@gmail.com"],
+                to=["djangocommunitypython@gmail.com"],
             )
             try:
                 mess.attach_file("test.txt")
                 mess.send()
             except BadHeaderError:
-                return HttpResponse('Найден некорректный заголовок')
+                return HttpResponse('Error ')
+            messages.add_message(request, messages.SUCCESS,
+                                     'Thanks for your support, we\'ll work on it ')   
             return redirect("profile")
 
     form = FeedbackForm()

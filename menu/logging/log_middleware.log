@@ -45,3 +45,7 @@
 2021-09-21 16:52:56.596 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-21 18:02:07.946 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-21 18:03:06.997 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-25 14:05:44.159 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-25 14:07:59.487 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-25 14:09:58.907 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-25 14:10:43.979 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
