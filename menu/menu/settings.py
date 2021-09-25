@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&)^s$n00)rao6l=sitobp$wm#(sqnikfl@3my91uw(ygv35jds
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -304,3 +304,8 @@ ADMIN = [
     ('Admin2', 'admin2@othersite.com'),
     ('MegaAdmin', 'megaadmin@megasite.com')
 ]
+
+import dj_database_url
+
+db_from_env = dj_database_url.config()
+DATABASES["default"].update(db_from_env)
