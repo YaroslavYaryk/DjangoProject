@@ -49,3 +49,9 @@
 2021-09-25 14:07:59.487 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-25 14:09:58.907 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-25 14:10:43.979 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-26 19:32:17.822 | ERROR    | core.middleware:process_exception:28 - user_log_fail() missing 1 required positional argument: 'user'
+2021-09-26 19:55:04.103 | ERROR    | core.middleware:process_exception:28 - get() returned more than one Woman -- it returned 2!
+2021-09-26 20:06:26.958 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:06:29.249 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:06:34.705 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:07:10.910 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist

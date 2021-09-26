@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&)^s$n00)rao6l=sitobp$wm#(sqnikfl@3my91uw(ygv35jds'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False    
 
 ALLOWED_HOSTS = ["*"]
 
@@ -78,7 +78,7 @@ ROOT_URLCONF = 'menu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -205,16 +205,28 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "assets"),
-    )
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "assets"),
+#     )
 # STATIC_ROOT = os.path.join(BASE_DIR, "assets")
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = "/media/"
+
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+  
+
+if DEBUG:
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets')]
+else:
+  STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+  
+
+
+
 
 ADMINS = [('Me', 'djangocommunitypython@gmail.com'), ]
 
@@ -304,8 +316,3 @@ ADMIN = [
     ('Admin2', 'admin2@othersite.com'),
     ('MegaAdmin', 'megaadmin@megasite.com')
 ]
-
-import dj_database_url
-
-db_from_env = dj_database_url.config()
-DATABASES["default"].update(db_from_env)

@@ -1,2 +1,0 @@
-loguru 
-web: gunicorn flowerashop.wsgi --log-file - 

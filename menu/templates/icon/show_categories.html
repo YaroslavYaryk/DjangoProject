@@ -6,11 +6,9 @@
 {% block link %}
 	{% get_category as store %}
 	<title>{{cat_slug|capfirst}}</title>
-	{% for elem in store %}
-		{% if elem.ico %}
-			<link rel="icon" type="" href="{{elem.ico.url}}"> 	
-		{% endif %}
-	{% endfor %}			
+
+			<link rel="icon" type="" href="{{cat.ico.url}}"> 	
+
 {% endblock %}
 
 {% block list %}

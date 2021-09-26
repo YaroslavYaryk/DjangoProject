@@ -27,6 +27,10 @@ from icon.views import *
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 from django.contrib.staticfiles.views import serve
 from django.views.decorators.cache import never_cache
+from django.views.static import serve
+from django.conf.urls import url
+from django.conf import settings
+from django.views.static import serve
 
 
 
@@ -59,10 +63,12 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('captcha/', include('captcha.urls')),
     path('api-auth/', include('rest_framework.urls')),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 ]  + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
-if settings.DEBUG:
+if  settings.DEBUG:
     import debug_toolbar
     urlpatterns.append(path(' static/<path:path>', never_cache(serve)))
 
@@ -72,3 +78,6 @@ if settings.DEBUG:
 
 urlpatterns += staticfiles_urlpatterns() 
 
+
+handler404 = "icon.views.handle_not_found"
+handler500 = "icon.views.handle_server_error"

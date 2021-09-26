@@ -67,7 +67,7 @@ class Home_page(DataMixin, CapMixin, ListView):
 
         context = super().get_context_data(**kwargs)  # like dynamic list
         c_def = self.get_user_context(
-            title=self.get_title(), ico='menu/img/ico/home_yellow.png',
+            title=self.get_title(),
             first=Woman.objects.filter(is_published=True).first(), order=order,
             order_list=self.order_list)
         return dict(list(context.items()) + list(c_def.items()))
@@ -295,7 +295,7 @@ class WomanCategory(DataMixin, ListView):
 
         # it's only for specific model
         return Woman.objects.filter(cat__slug=self.kwargs["category_name"],
-                                    is_published=True).order_by(self.get_choice()).select_related("cat")
+                                    is_published=True).select_related("cat")
         # to find only those element we need
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -306,6 +306,7 @@ class WomanCategory(DataMixin, ListView):
 
         context = super().get_context_data(**kwargs)  # like dynamic list
         c_def = self.get_user_context(cat_slug=self.kwargs["category_name"],
+                                      cat = Category.objects.get(slug = self.kwargs["category_name"]),
                                       order=order,
                                       order_list=self.order_list)
         return dict(list(context.items()) + list(c_def.items()))
@@ -632,10 +633,12 @@ class CategoryView(ModelViewSet):
     serializer_class = CategorySerializer
 
 
+def handle_not_found(request, exception):
+    return render(request, "admin/404.html")
 
 
-
-
+def handle_server_error(request):
+    return render(request, "admin/500.html")
 
 
 

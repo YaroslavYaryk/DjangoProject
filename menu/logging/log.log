@@ -9298,3 +9298,121 @@ TypeError: context must be a dict rather than tuple.
 2021-09-25 14:07:59.487 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-25 14:09:58.907 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
 2021-09-25 14:10:43.979 | ERROR    | core.middleware:process_exception:28 - 'WSGIRequest' object has no attribute 'GT'
+2021-09-26 16:18:00,401  django.request ERROR    <--> Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py", line 70, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/test/utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+2021-09-26 16:18:08,203  django.request ERROR    <--> Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py", line 70, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/test/utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+2021-09-26 16:22:40,702  django.request ERROR    <--> Internal Server Error: /admin/sdsds
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 250, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/common.py", line 12, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 430, in catch_all_view
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 183, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 339, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "/home/yaroslav/Python/Django/menu/core/middleware.py", line 25, in process_exception
+    error = exception.args[0]
+IndexError: tuple index out of range
+2021-09-26 16:36:32,355  django.request ERROR    <--> Internal Server Error: /de
+2021-09-26 16:36:40,570  django.request ERROR    <--> Internal Server Error: /de
+2021-09-26 16:37:05,084  django.request ERROR    <--> Internal Server Error: /www
+2021-09-26 16:38:06,518  django.request ERROR    <--> Internal Server Error: /www
+2021-09-26 17:38:52,927  django.request ERROR    <--> Internal Server Error: /dfd
+2021-09-26 17:38:58,243  django.request ERROR    <--> Internal Server Error: /dfd
+2021-09-26 19:32:17.822 | ERROR    | core.middleware:process_exception:28 - user_log_fail() missing 1 required positional argument: 'user'
+2021-09-26 19:55:04.103 | ERROR    | core.middleware:process_exception:28 - get() returned more than one Woman -- it returned 2!
+2021-09-26 20:06:26.958 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:06:29.249 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:06:34.705 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-26 20:07:10.910 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
