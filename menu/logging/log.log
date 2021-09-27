@@ -9416,3 +9416,69 @@ IndexError: tuple index out of range
 2021-09-26 20:06:29.249 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
 2021-09-26 20:06:34.705 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
 2021-09-26 20:07:10.910 | ERROR    | core.middleware:process_exception:28 - “/home/yaroslav/Python/Django/menu/assets/menu/img/ico/orange.png” does not exist
+2021-09-27 17:54:15.202 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 17:55:04.716 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 17:57:34.817 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 17:58:45.291 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:04:30.375 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:05:17.480 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:06:35.971 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:07:00.973 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:07:31.506 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:07:39.765 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:07:46.366 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:08:32.170 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:08:41.170 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:08:51.531 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:09:16.163 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:09:59.615 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:10:16.378 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:27:46.031 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:28:12.304 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:50:38.196 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:54:38.702 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:56:07.318 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:56:36.023 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:58:52.663 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:59:21.649 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 19:59:21.714 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:16:55.499 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:16:55.840 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:17:55.141 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:17:55.183 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:18:22.393 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:18:22.439 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:18:36.253 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:18:36.294 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:19:50.994 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:19:51.038 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:20:20.935 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:20:20.975 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:20:38.761 | ERROR    | core.middleware:process_exception:28 - Category matching query does not exist.
+2021-09-27 20:20:38.805 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:22:58.125 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:22:58.159 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:23:09.259 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:23:09.290 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:29:19.333 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:29:19.366 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:32:59.311 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:32:59.347 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:35:03.028 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:35:03.062 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:35:15.037 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:35:15.071 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:41:13.668 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:41:13.703 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:41:28.651 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:41:28.686 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:42:50.227 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:42:50.270 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:43:00.291 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:43:00.322 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:44:55.454 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:44:55.491 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:45:45.948 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:45:45.982 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-27 20:46:29.237 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-27 20:46:29.278 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable

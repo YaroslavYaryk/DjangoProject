@@ -72,12 +72,12 @@ class Woman(models.Model):
     updation_date = models.DateTimeField(auto_now=True)
 
     # will upload photo to this path
-    photo = models.ImageField(upload_to="photos/Data%y/%m/%d/")
+    photo = models.ImageField(upload_to="photos/Data%y/%m/%d/", blank=True)
 
     is_published = models.BooleanField(default=True)  # default is True
 
     cat = models.ForeignKey("Category", on_delete=models.PROTECT,
-                            verbose_name="Category",
+                            verbose_name="Category"
                             )  # add field from another model
 
     notes = GenericRelation('Note')
@@ -90,6 +90,10 @@ class Woman(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        return super(Woman, self).save(*args, **kwargs)     
 
     def get_slag(self):
         return str(self.title).replace(" ", "_")
@@ -141,6 +145,10 @@ class Category(models.Model):
                             )
     ico = models.ImageField(
         upload_to="icons/Data%y/%m/%d/", null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        return super(Category, self).save(*args, **kwargs)    
 
     def __str__(self):
         return str(self.name).lower()
