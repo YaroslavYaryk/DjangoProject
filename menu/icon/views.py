@@ -153,10 +153,11 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
                 self.request), post_news=post)  # create new one
 
         for elem in LikedComment.objects.all().select_related():
-            if elem.user != self.request.user:
-                elem.user = self.request.user
-                elem.choice = "No"  # no  like
-                elem.save()
+            if self.request.user.is_authenticated:
+                if elem.user != self.request.user:
+                    elem.user = self.request.user
+                    elem.choice = "No"  # no  like
+                    elem.save()
 
         liked = 0
 
@@ -171,6 +172,15 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
                 pass
         else:
             liked = 0
+        user = self.request.user
+
+        if user.is_authenticated:
+            comment_likes=LikedComment.objects.filter(
+                                          user=self.request.user).select_related("post_comment", "user")
+
+        else:
+            comment_likes = None                                  
+                                      
 
         context = super().get_context_data(**kwargs)  # like dynamic list
         c_def = self.get_user_context(image=WomanImage.objects.filter(post__slug=self.kwargs["slug_id"]).select_related("post"),
@@ -179,9 +189,8 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
                                       comments=WomanComment.objects.annotate(len=Length(F('comment'))).filter(
                                           post__slug=self.kwargs["slug_id"]).select_related('post'),
                                       is_liked=liked,
-                                      comment_likes=LikedComment.objects.filter(
-                                          user=self.request.user).select_related("post_comment", "user"),
-                                      )
+                                     comment_likes = comment_likes,
+                                     user = user)
         return dict(list(context.items()) + list(c_def.items()))
 
     def post(self, request, *args, **kwargs):
@@ -194,7 +203,7 @@ class NewsNyCategory(DataMixin, DetailView, CreateView):
                                    comment=storage["comment"],
                                    post_id=post_id)  # create new post
         # create like(choice = No)
-        like = LikedComment(user=request.user, post_comment=new_comment)
+        like = LikedComment(user=self.request.user, post_comment=new_comment)
 
         with open("icon/order_folders/post.txt", "w") as f:
             f.write(self.kwargs["slug_id"])
@@ -442,8 +451,13 @@ class ProfileView(DataMixin, ListView):
     template_name = "icon/profile.html"
 
     def get_context_data(self, *args, **kwargs):
+        try:
+            user = self.request.user
+        except:
+            user = None    
         context = super().get_context_data(*args, **kwargs)
         c_def = self.get_user_context(
+            user = user,
             title="Profile",
             post=Woman.objects.raw(
                 "SELECT id, title FROM icon_woman")[0],

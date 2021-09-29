@@ -60,6 +60,7 @@ class NewModelForm(forms.ModelForm):
 
         fields = ["title", "content", "photo", "is_published", "cat"]
         widgets = {
+
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
             'cat': forms.Select(attrs={'class': 'form-control'}),
@@ -116,6 +117,12 @@ class WomanCommentForm(forms.ModelForm):
             "cols": 50,
             "rows": 10})
     )
+
+    def clean_username(self):
+        user = self.cleaned_data["username"]
+        if user != user.title():
+            raise ValidationError("Name shold start with an Uppercase letter")
+        return user
 
     class Meta:
         model = WomanComment

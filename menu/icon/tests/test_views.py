@@ -10,9 +10,9 @@ class ViewsTest(TestCase):
     def setUp(self) -> None:
         self.client = Client()
         self.category1 = Category.objects.create(
-            name = "project1"
+            name = "category1",
+            ico = "../../assets/menu/img/5.jpg"
         )
-        self.detail_url = reverse("category", args=['project1'])
 
     def test_home_page(self):
 
@@ -24,7 +24,7 @@ class ViewsTest(TestCase):
 
     def test_category_page(self):
 
-        response = self.client.get(self.detail_url)
+        response = self.client.get(reverse("category", args=["category1"]))
         self.assertEquals(response.status_code, 200)
         
 

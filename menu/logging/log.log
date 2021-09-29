@@ -9482,3 +9482,439 @@ IndexError: tuple index out of range
 2021-09-27 20:45:45.982 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
 2021-09-27 20:46:29.237 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
 2021-09-27 20:46:29.278 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 09:55:00.091 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 09:55:00.256 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:00:25.879 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:00:25.919 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:00:50.978 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:00:51.013 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:01:45.512 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:01:45.547 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:04:25.593 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:04:25.627 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:07:56.771 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:07:56.808 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:09:04.866 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:09:04.901 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:10:20.533 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:10:20.575 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:11:20.961 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:11:20.999 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:14:08.350 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:14:08.386 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:14:35.198 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:14:35.236 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:15:23.390 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:15:23.426 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:15:40.174 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:15:40.208 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:16:27.650 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:16:27.688 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:19:11.033 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:19:11.071 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:20:35.199 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:20:35.235 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:23:08.328 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:23:08.365 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:23:45.481 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:23:45.514 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:25:09.407 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:25:09.442 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:25:55.041 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:25:55.077 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:26:17.282 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:26:17.318 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:35:00.436 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:35:00.475 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:35:12.947 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:35:12.981 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:22.412 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:22.450 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:34.057 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:34.090 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:47.636 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:47.675 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:17.941 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:26.729 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:31.600 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:57.425 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:46:28,580  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 182, in get_context_data
+    comment_likes=LikedComment.objects.filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-09-28 20:52:30,616  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f1e54296130>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:54:33,881  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa9c341df10>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:55:28,139  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fb2837d8580>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:56:47,047  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 158, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f15ff480c40>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:57:10,707  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    if self.request.username != "AnonymousUser":
+AttributeError: 'WSGIRequest' object has no attribute 'username'
+2021-09-28 20:57:25,606  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 158, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f28f0d0f640>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:57:36,462  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 158, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f28f01cfeb0>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 20:58:33,741  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 177, in get_context_data
+    comment_likes =  LikedComment.objects.filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-09-28 21:01:07,598  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 176, in get_context_data
+    if self.request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+2021-09-28 21:01:25,485  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 188, in get_context_data
+    comment_likes=comment_likes,
+UnboundLocalError: local variable 'comment_likes' referenced before assignment
+2021-09-28 21:02:37,178  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f8144d48a90>>": "LikedComment.user" must be a "User" instance.
+2021-09-28 21:02:51,239  django.request ERROR    <--> Internal Server Error: /post/news
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 182, in get_context_data
+    comment_likes=LikedComment.objects.filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-09-29 07:46:12,807  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 182, in get_context_data
+    comment_likes=LikedComment.objects.filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-09-29 07:47:19,985  django.request ERROR    <--> Internal Server Error: /post/parkur
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 184, in get_context_data
+    comment_likes=LikedComment.objects.filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-09-29 07:56:43,331  django.request ERROR    <--> Internal Server Error: /post/first-post
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 203, in post
+    like = LikedComment(user=request.user, post_comment=new_comment)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fbc2beeccd0>>": "LikedComment.user" must be a "User" instance.
+2021-09-29 07:58:13,721  django.request ERROR    <--> Internal Server Error: /post/first-post
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 203, in post
+    like = LikedComment(user=self.request.user, post_comment=new_comment)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f6ecca53bb0>>": "LikedComment.user" must be a "User" instance.
+2021-09-29 07:58:30,192  django.request ERROR    <--> Internal Server Error: /post/first-post
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/generic/detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/yaroslav/Python/Django/menu/icon/views.py", line 157, in get_context_data
+    elem.user = self.request.user
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f6ebff1bca0>>": "LikedComment.user" must be a "User" instance.

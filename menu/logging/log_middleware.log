@@ -121,3 +121,59 @@
 2021-09-27 20:45:45.982 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
 2021-09-27 20:46:29.237 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
 2021-09-27 20:46:29.278 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 09:55:00.091 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 09:55:00.256 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:00:25.879 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:00:25.919 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:00:50.978 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:00:51.013 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:01:45.512 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:01:45.547 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:04:25.593 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:04:25.627 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:07:56.771 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:07:56.808 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:09:04.866 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:09:04.901 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:10:20.533 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:10:20.575 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:11:20.961 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:11:20.999 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:14:08.350 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:14:08.386 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:14:35.198 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:14:35.236 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:15:23.390 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:15:23.426 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:15:40.174 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:15:40.208 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:16:27.650 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:16:27.688 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:19:11.033 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:19:11.071 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:20:35.199 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:20:35.235 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:23:08.328 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:23:08.365 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:23:45.481 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:23:45.514 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:25:09.407 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:25:09.442 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:25:55.041 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:25:55.077 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:26:17.282 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:26:17.318 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:35:00.436 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:35:00.475 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:35:12.947 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:35:12.981 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:22.412 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:22.450 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:34.057 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:34.090 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 10:36:47.636 | ERROR    | core.middleware:process_exception:28 - The 'ico' attribute has no file associated with it.
+2021-09-28 10:36:47.675 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:17.941 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:26.729 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:31.600 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable
+2021-09-28 20:44:57.425 | ERROR    | core.middleware:process_exception:28 - 'AnonymousUser' object is not iterable

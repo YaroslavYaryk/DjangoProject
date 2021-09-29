@@ -73,12 +73,12 @@
 {% block content %}
 
 	<div class="container">
-			<div class="row">
+			<div class="row" id="main">
 				{% for elem in post %}
 
 					<div class="card mb-3" style="max-width: 1800px;">
-					  <div class="row g-0">
-					    <div class="col-md-4">
+					  <div class="row g-0" id="row_row">
+					    <div class="col-md-4" id="col_header">
 					    	<div class="card-header">
 					    		Category:
 					    		<a href="{{elem.cat.get_absolute_url}}" class="link_cat"> {{elem.cat|capfirst}}</a>

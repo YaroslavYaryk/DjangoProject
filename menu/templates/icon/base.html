@@ -102,7 +102,7 @@
 
 			    <a  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none cat_head">
 			      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-			      <span class="fs-4"  >Categories</span>
+			      <span class="fs-4" id="category_title"  >Categories</span>
 			    </a>
 			    <hr>
 
@@ -151,68 +151,69 @@
 					
 				{% endblock %}
 
-
-				{% if page_obj.has_other_pages %}
-					<div class="pagination mb-3" >
-			  			{% if page_obj.has_previous %}
-						  <a href="?{{q}}page={{  page_obj.previous_page_number}}" class="link_pagin">&laquo;</a>
-						{% else %}
-						  <a  class="disable">&laquo;</a>
-						{% endif %} 
-						{% if not page_obj.has_previous %}
-							<li class=" simple_li">
-						    	<a class="link_pagin link_pagin__active" href="?{{q}}page=1">1</a>
-						    </li>
-						{% else %}
-							<li class=" simple_li">
-						    	<a class="link_pagin"  href="?{{q}}page=1">1</a>
-						    </li>    
-						{% endif %}
-						{% if page_obj.previous_page_number > 2 %}
+				{% block paginate %}
+					{% if page_obj.has_other_pages %}
+						<div class="pagination mb-3" >
+							{% if page_obj.has_previous %}
+							<a href="?{{q}}page={{  page_obj.previous_page_number}}" class="link_pagin">&laquo;</a>
+							{% else %}
+							<a  class="disable">&laquo;</a>
+							{% endif %} 
+							{% if not page_obj.has_previous %}
 								<li class=" simple_li">
-								    <a class="disable" >...</a>
+									<a class="link_pagin link_pagin__active" href="?{{q}}page=1">1</a>
 								</li>
-						{% endif %}
-						
+							{% else %}
+								<li class=" simple_li">
+									<a class="link_pagin"  href="?{{q}}page=1">1</a>
+								</li>    
+							{% endif %}
+							{% if page_obj.previous_page_number > 2 %}
+									<li class=" simple_li">
+										<a class="disable" >...</a>
+									</li>
+							{% endif %}
+							
 
-					  	{% for p in page_obj.paginator.page_range %}
-					  		{% if p < page_obj.paginator.num_pages  and p > 1 %}
-							  	{% if page_obj.number == p %}
-							    	<li class=" simple_li">
-							    		<a class="link_pagin link_pagin__active"  href="?{{q}}page={{ p }}">{{ p }}</a>
-							    	</li>
-							    {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
-							    	<li class=" simple_li">
-							    		<a class="link_pagin" href="?{{q}}page={{ p }}">{{ p }}</a>
-							    	</li>
-							    
-							    {% endif %}	
-							{% endif %}    	
-						{% endfor %}
-						{% if page_obj.next_page_number < page_obj.paginator.num_pages|add:-1 %}
-							<li class=" simple_li">
-							    <a class="disable" >...</a>
-							</li>
-						{% endif %}
-						{% if not page_obj.has_next %}
-							<li class=" simple_li">
-						    	<a class="link_pagin link_pagin__active" href="?{{q}}page={{ page_obj.paginator.num_pages }}">
-									{{page_obj.paginator.num_pages}}</a>
-						    </li>
-						{% else %}
-							<li class=" simple_li">
-						    	<a class="link_pagin"  href="?{{q}}page={{ page_obj.paginator.num_pages }}">
-									{{page_obj.paginator.num_pages}}</a>
-						    </li>    
-						{% endif %}
-						{% if page_obj.has_next %}
-					  		<a href="?{{q}}page={{  page_obj.next_page_number}}" class="link_pagin">&raquo;</a>
-						{% else %}
-					 		<a  class="disable">&raquo;</a>
-						{% endif %}  
-					</div>
+							{% for p in page_obj.paginator.page_range %}
+								{% if p < page_obj.paginator.num_pages  and p > 1 %}
+									{% if page_obj.number == p %}
+										<li class=" simple_li">
+											<a class="link_pagin link_pagin__active"  href="?{{q}}page={{ p }}">{{ p }}</a>
+										</li>
+									{% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
+										<li class=" simple_li">
+											<a class="link_pagin" href="?{{q}}page={{ p }}">{{ p }}</a>
+										</li>
+									
+									{% endif %}	
+								{% endif %}    	
+							{% endfor %}
+							{% if page_obj.next_page_number < page_obj.paginator.num_pages|add:-1 %}
+								<li class=" simple_li">
+									<a class="disable" >...</a>
+								</li>
+							{% endif %}
+							{% if not page_obj.has_next %}
+								<li class=" simple_li">
+									<a class="link_pagin link_pagin__active" href="?{{q}}page={{ page_obj.paginator.num_pages }}">
+										{{page_obj.paginator.num_pages}}</a>
+								</li>
+							{% else %}
+								<li class=" simple_li">
+									<a class="link_pagin"  href="?{{q}}page={{ page_obj.paginator.num_pages }}">
+										{{page_obj.paginator.num_pages}}</a>
+								</li>    
+							{% endif %}
+							{% if page_obj.has_next %}
+								<a href="?{{q}}page={{  page_obj.next_page_number}}" class="link_pagin">&raquo;</a>
+							{% else %}
+								<a  class="disable">&raquo;</a>
+							{% endif %}  
+						</div>
 					{% endif %}
-			</div>
+				{% endblock %}
+				</div>
 
 
 		</div>
