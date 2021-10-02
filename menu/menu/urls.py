@@ -81,3 +81,5 @@ urlpatterns += staticfiles_urlpatterns()
 
 handler404 = "icon.views.handle_not_found"
 handler500 = "icon.views.handle_server_error"
+handler400 = "icon.views.handle_url_error"
+handler403 = "icon.views.handler_forbiden"

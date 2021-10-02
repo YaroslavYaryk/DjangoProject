@@ -213,8 +213,18 @@
 						</div>
 					{% endif %}
 				{% endblock %}
-				</div>
-
+			</div>
+			<div class="">
+				<hr>
+				{% block top_chart %}
+					{% get_top_chart %}
+				{% endblock %}
+				<hr>
+				{% block most_liked %}
+					{% get_most_liked %}
+				{% endblock %}
+				<hr>
+			</div>	
 
 		</div>
 		<div class="footer">

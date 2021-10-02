@@ -655,9 +655,12 @@ def handle_server_error(request):
     return render(request, "admin/500.html")
 
 
+def handler_forbiden(request, exception):
+    return render(request, "icon/403.html")
 
 
-
+def handle_url_error(request, exception):
+    return render(request, "icon/400.html", status=400)
 
 
 

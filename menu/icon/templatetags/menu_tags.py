@@ -30,4 +30,20 @@ def get_categories_list(sort = None):
 	return {"cats":cats}	
 
 
-	
+@register.inclusion_tag("icon/new/get_top_chart.html")
+def get_top_chart():
+
+	order = Woman.objects.order_by("ip").last()
+	return {"order": order}
+
+@register.inclusion_tag("icon/new/get_most_liked.html")
+def get_most_liked():
+
+	queryset = Woman.objects.all()
+	res = queryset.first()
+	for elem in queryset:
+		if elem.likes.count() > res.likes.count():
+			res = elem
+
+
+	return {"order": res}
