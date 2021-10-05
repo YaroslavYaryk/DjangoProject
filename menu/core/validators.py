@@ -9,17 +9,16 @@ class NoForbiddenValidator:
     def __init__(self, forbidden_list) -> None:
         self.forbidden_list = forbidden_list
 
-
     def validate(self, password, user=None):
 
         for elem in self.forbidden_list:
             if elem in password:
-                raise ValidationError(_(f"""
+                raise ValidationError((f"""
                 password is not supposed to consist of forbidden chars like {self.forbidden_list}"""))
 
     def get_help_text(self):
 
-        return _(f"password is not supposed to consist of forbidden chars like {self.forbidden_list}" )  
+        return (f"password is not supposed to consist of forbidden chars like {self.forbidden_list}")
 
 
 class ConsistUppercaseValidator:
@@ -29,10 +28,9 @@ class ConsistUppercaseValidator:
 
         if not any(list(filter(lambda x: x in ascii_uppercase, password))):
 
-                raise ValidationError(_(f"""
+            raise ValidationError((f"""
                 password is supposed to be contained with at least one uppercase letter"""))
 
     def get_help_text(self):
 
-        return _(f"password is supposed to comtain at least one uppercase letter" ) 
-
+        return (f"password is supposed to comtain at least one uppercase letter")

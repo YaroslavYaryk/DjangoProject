@@ -7,7 +7,7 @@ from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from ckeditor.widgets import CKEditorWidget
 from ckeditor.fields import RichTextFormField
 from ckeditor_uploader.fields import RichTextUploadingFormField
-from captcha.fields import CaptchaField
+# from captcha.fields import CaptchaField
 from django .core import validators
 
 
@@ -46,8 +46,8 @@ class NewModelForm(forms.ModelForm):
             raise ValidationError("Lenth is more than 90")
         return title
 
-    captcha = CaptchaField(label='Enter the text from the picture',
-                           error_messages={'invalid': 'Wrong answer'})
+    # captcha = CaptchaField(label='Enter the text from the picture',
+                           # error_messages={'invalid': 'Wrong answer'})
     photo = forms.ImageField(label="Image",
                              validators=[validators.FileExtensionValidator(
                                  allowed_extensions=("gif", "png"))],
@@ -75,8 +75,8 @@ class RegisterUserForm(UserCreationForm):
         widget=forms.PasswordInput(attrs={"class": "form-control"}))
     password2 = forms.CharField(
         widget=forms.PasswordInput(attrs={"class": "form-control"}))
-    captcha = CaptchaField(label='Solve next conundrum',
-                           error_messages={'invalid': 'Wrong answer'})
+    # captcha = CaptchaField(label='Solve next conundrum',
+    #                        error_messages={'invalid': 'Wrong answer'})
 
     class Meta:
         model = User

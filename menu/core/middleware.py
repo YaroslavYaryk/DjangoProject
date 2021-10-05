@@ -2,8 +2,8 @@ from django.shortcuts import render
 from loguru import logger as log
 
 
-log.add("/home/yaroslav/Python/Django/menu/logging/log_middleware.log",
-        enqueue=True, level="ERROR", rotation="10 MB")
+# log.add("/home/yaroslav/Programming/Python/Django/menu/logging/log_middleware.log",
+#         enqueue=True, level="ERROR", rotation="10 MB")
 
 class ExceptionMiddleware:
 

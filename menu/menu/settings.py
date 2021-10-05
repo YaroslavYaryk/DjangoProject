@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 from django.contrib import messages
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-&)^s$n00)rao6l=sitobp$wm#(sqnikfl@3my91uw(ygv35jds
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False    
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["cryptic-chamber-81332.herokuapp.com"]
 
 
 # Application definition
@@ -42,10 +43,9 @@ INSTALLED_APPS = [
     "social_django",
     "ckeditor",
     "ckeditor_uploader",
-    "captcha",
+    # "captcha",
     "bootstrap4",
     'django_cleanup',
-    'easy_thumbnails',
     "icon.apps.IconConfig",
     'rest_framework',
     'corsheaders',
@@ -114,44 +114,44 @@ INTERNAL_IPS = [
 ]
 
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
         
-        'file': {
-            'format': '%(asctime)s  %(name)-12s %(levelname)-8s <--> %(message)s'
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
+#         'file': {
+#             'format': '%(asctime)s  %(name)-12s %(levelname)-8s <--> %(message)s'
+#         },
+#         'simple': {
+#             'format': '%(levelname)s %(message)s'
+#         },
+#     },
+#     'handlers': {
         
-        'file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'formatter': 'file',
-            'filename': '/home/yaroslav/Python/Django/menu/logging/log.log',
-        },
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler',
-            'formatter': 'simple'
-        },
-    },
-    'loggers': {
-        '': {
-            'level': 'WARNING',
-            'handlers': ['file']
-        },
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-    }
-}
+#         'to_file': {
+#             'level': 'WARNING',
+#             'class': 'logging.FileHandler',
+#             'formatter': 'file',
+#             'filename': '/home/yaroslav/Programming/Python/Django/menu/logging/log.log',
+#         },
+#         'mail_admins': {
+#             'level': 'ERROR',
+#             'class': 'django.utils.log.AdminEmailHandler',
+#             'formatter': 'simple'
+#         },
+#     },
+#     'loggers': {
+#         '': {
+#             'level': 'WARNING',
+#             'handlers': ['to_file']
+#         },
+#         'django.request': {
+#             'handlers': ['mail_admins'],
+#             'level': 'ERROR',
+#             'propagate': True,
+#         },
+#     }
+# }
 
 
 # Password validation
@@ -316,3 +316,4 @@ ADMIN = [
     ('Admin2', 'admin2@othersite.com'),
     ('MegaAdmin', 'megaadmin@megasite.com')
 ]
+

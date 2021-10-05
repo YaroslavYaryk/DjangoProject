@@ -61,7 +61,7 @@ urlpatterns = [
     path('', include('social_django.urls', namespace='social')),
     path('__debug__/', include(debug_toolbar.urls)),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('captcha/', include('captcha.urls')),
+    # path('captchas/', include('captcha.urls')),
     path('api-auth/', include('rest_framework.urls')),
     url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),

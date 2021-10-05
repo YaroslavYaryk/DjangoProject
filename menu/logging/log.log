@@ -1,4 +1,4 @@
-2021-08-24 05:21:52.093 | ERROR    | icon.views:get_queryset:64 - error was occupted
+  2021-08-24 05:21:52.093 | ERROR    | icon.views:get_queryset:64 - error was occupted
 2021-08-24 05:21:52,360  django.request ERROR    <--> Internal Server Error: /
 Traceback (most recent call last):
   File "/home/yaroslav/Python/Django/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
