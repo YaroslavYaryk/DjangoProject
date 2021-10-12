@@ -42,7 +42,7 @@ urlpatterns = [
     path("accounts/reset/<uidb64>/<token>/", auth_views.PasswordResetConfirmView.as_view(), name="password_reset_confirm"),
     path("accounts/password_reset_complete/", auth_views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
     path("accounts/profile/", ProfileView.as_view(), name="profile"),
-    path("sign_in/",(LoginUser.as_view()), name="sign_in"),
+    path("sign_in/",user_login, name="sign_in"),
     path("register/",( RegisterUser.as_view()), name="register"),
     path("logout/<slug:admin_name>", LogoutUser.as_view(), name="logout"),
     

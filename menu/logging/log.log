@@ -10069,3 +10069,227 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2021-10-02 17:43:32,119  django.security.DisallowedHost ERROR    <--> Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 2021-10-02 17:50:13,901  django.security.DisallowedHost ERROR    <--> Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 2021-10-02 17:50:16,370  django.security.DisallowedHost ERROR    <--> Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2021-10-06 18:06:49,189  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 458, in user_login
+    form = LoginForm()
+NameError: name 'LoginForm' is not defined
+2021-10-06 18:11:37,048  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 447, in user_login
+    user = authenticate(request, username=cd['username'], password=cd['password'])
+NameError: name 'authenticate' is not defined
+2021-10-06 18:11:54,879  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 448, in user_login
+    user = authenticate(request, username=cd['username'], password=cd['password'])
+NameError: name 'authenticate' is not defined
+2021-10-06 18:12:57,236  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 447, in user_login
+    user = authenticate(request, username=cd['username'], password=cd['password'])
+NameError: name 'authenticate' is not defined
+2021-10-06 18:14:14,730  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 450, in user_login
+    login(request, user)
+NameError: name 'login' is not defined
+2021-10-06 18:16:16,798  django.security.csrf WARNING  <--> Forbidden (CSRF token missing or incorrect.): /sign_in/
+2021-10-06 18:16:21,776  django.security.csrf WARNING  <--> Forbidden (CSRF token missing or incorrect.): /sign_in/
+2021-10-06 18:16:26,886  django.security.csrf WARNING  <--> Forbidden (CSRF token missing or incorrect.): /sign_in/
+2021-10-06 18:16:51,737  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 446, in user_login
+    if form.is_valid():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 87, in authenticate
+    user_login_failed.send(sender=__name__, credentials=_clean_credentials(credentials), request=request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: user_log_fail() missing 1 required positional argument: 'user'
+2021-10-06 18:17:58,788  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 446, in user_login
+    if form.is_valid():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 87, in authenticate
+    user_login_failed.send(sender=__name__, credentials=_clean_credentials(credentials), request=request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: user_log_fail() missing 1 required positional argument: 'user'
+2021-10-06 18:18:28,400  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 446, in user_login
+    if form.is_valid():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 87, in authenticate
+    user_login_failed.send(sender=__name__, credentials=_clean_credentials(credentials), request=request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: user_log_fail() missing 1 required positional argument: 'user'
+2021-10-06 18:22:11,884  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 446, in user_login
+    if form.is_valid():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 87, in authenticate
+    user_login_failed.send(sender=__name__, credentials=_clean_credentials(credentials), request=request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: user_log_fail() missing 1 required positional argument: 'user'
+2021-10-06 18:30:32,310  django.request ERROR    <--> Internal Server Error: /sign_in/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/Programming/Python/Django/menu/icon/views.py", line 447, in user_login
+    if form.is_valid():
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 87, in authenticate
+    user_login_failed.send(sender=__name__, credentials=_clean_credentials(credentials), request=request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: user_log_fail() missing 1 required positional argument: 'user'
+2021-10-06 18:33:42,014  django.request ERROR    <--> Internal Server Error: /complete/google-oauth2/
+Traceback (most recent call last):
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_django/utils.py", line 46, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_django/views.py", line 31, in complete
+    return do_complete(request.backend, _do_login, user=request.user,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/actions.py", line 45, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/base.py", line 40, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/utils.py", line 248, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/oauth.py", line 391, in auth_complete
+    return self.do_auth(response['access_token'], response=response,
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/utils.py", line 248, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/oauth.py", line 403, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_django/strategy.py", line 105, in authenticate
+    return authenticate(*args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/django/contrib/auth/__init__.py", line 76, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/base.py", line 80, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/base.py", line 83, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/backends/base.py", line 113, in run_pipeline
+    result = func(*args, **out) or {}
+  File "/home/yaroslav/.local/lib/python3.8/site-packages/social_core/pipeline/social_auth.py", line 79, in associate_by_email
+    raise AuthException(
+social_core.exceptions.AuthException: The given email address is associated with another account

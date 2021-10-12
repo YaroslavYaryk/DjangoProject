@@ -19,6 +19,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic.base import TemplateView
 from django.core.paginator import Paginator
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.views import LoginView, LogoutView
@@ -419,23 +420,28 @@ def send_mail_register(request):
     return HttpResponseRedirect(reverse("sign_in"))
 
 
-
-class LoginUser(DataMixin, SuccessMessageMixin, LoginView):
-
-    """Autorization class"""
-
-    form_class = LoginUserForm
-    template_name = 'icon/sign_in.html'
-    error_message = "Something went wrong"
-    user = ""
-    success_message = f"Successfully sign in"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data(*args, **kwargs)
-        c_def = self.get_user_context(
-            title="Sign in", ico="menu/img/ico/home_pink.png")
-
-        return dict(list(context.items()) + list(c_def.items()))
+def user_login(request):
+    form = LoginUserForm()
+    if request.method == 'POST':
+        form = LoginUserForm(request, request.POST)
+        try:
+            if form.is_valid():
+                cd = form.cleaned_data
+                user = authenticate(request, username=cd['username'], password=cd['password'])
+                if user is not None:
+                    login(request, user)
+                    messages.add_message(request, messages.SUCCESS,
+                             'Successfully sign in')
+                    return HttpResponseRedirect(reverse("profile"))
+                else:
+                    messages.add_message(request, messages.ERROR,
+                             'Something went wrong')    
+        except TypeError:
+            messages.add_message(request, messages.ERROR,
+                            ' Wrong username or password')            
+    else:
+        form = LoginUserForm()
+    return render(request, 'icon/sign_in.html', {'form': form, "menu": menu})
 
 
 class LogoutUser(LogoutView, SuccessMessageMixin):
@@ -735,3 +741,23 @@ def handle_url_error(request, exception):
 #     }
 
 #     return render(request, 'icon/about.html', context=storage)
+
+
+
+
+# class LoginUser(DataMixin, SuccessMessageMixin, LoginView):
+
+#     """Autorization class"""
+
+#     form_class = LoginUserForm
+#     template_name = 'icon/sign_in.html'
+#     error_message = "Something went wrong"
+#     user = ""
+#     success_message = f"Successfully sign in"
+
+#     def get_context_data(self, *args, **kwargs):
+#         context = super().get_context_data(*args, **kwargs)
+#         c_def = self.get_user_context(
+#             title="Sign in", ico="menu/img/ico/home_pink.png")
+
+#         return dict(list(context.items()) + list(c_def.items()))
