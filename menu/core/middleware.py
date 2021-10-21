@@ -16,15 +16,15 @@ class ExceptionMiddleware:
 
         return response
 
-    # def process_exception(self, request, exception):
+    def process_exception(self, request, exception):
 
-    #     if request.path == "/":
-    #         button = "Send_feedback"
-    #         error = "Sorry for this, please send message to make it allright"
-    #     else:
-    #         error = exception.args[0]
-    #         button = "Home"
+        if request.path == "/":
+            button = "Send_feedback"
+            error = "Sorry for this, please send message to make it allright"
+        else:
+            error = exception.args[0]
+            button = "Home"
 
-    #     log.error(exception)    
+        log.error(exception)    
 
-    #     return render(request, "icon/error.html", context={"error": error, "button": button})
+        return render(request, "icon/error.html", context={"error": error, "button": button})
