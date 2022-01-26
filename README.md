@@ -1,9 +1,9 @@
 # Django Blog
-![](menu/blog_home.png)
-![](menu/blog_queryset.png)
-![](menu/blog_detail.png)
-![](menu/blog_comment.png)
-![](menu/blog_add_post.png)
+![](menu/img/blog_home.png)
+![](menu/img/blog_queryset.png)
+![](menu/img/blog_detail.png)
+![](menu/img/blog_comment.png)
+![](menu/img/blog_add_post.png)
 Perfect application for seeing and posting blog with all features like ordering, search, 
 likes, commtnts, like on comments, etc
 
